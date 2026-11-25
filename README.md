@@ -86,7 +86,7 @@ npm run build
 npx playwright test --config playwright.pwa.config.ts
 ```
 
-`build` делает только локальную сборку и генерирует офлайн-кеш. Деплой: push в `main` запускает `.github/workflows/deploy.yml`, который собирает проект и публикует `dist` через GitHub Pages. Pages включается один раз вручную: Settings → Pages → Source: GitHub Actions. Адрес: https://regkriks-star.github.io/litRpgBook/. `GITHUB_TOKEN` не может включить Pages сам, поэтому первый деплой пройдёт после этого шага. Playwright использует `/usr/bin/google-chrome`; при переносе можно заменить путь установленным Chromium.
+`build` делает только локальную сборку и генерирует офлайн-кеш. Деплой: push в `main` запускает `.github/workflows/deploy.yml`, который собирает проект и публикует `dist` через GitHub Pages. Pages включается один раз вручную: Settings → Pages → Source: GitHub Actions. Адрес: https://regkriks-star.github.io/litRpgBook/. Первый деплой выполнен 25.11.2026: сайт отдаёт 200, ассеты совпадают с локальным `dist`. Playwright использует `/usr/bin/google-chrome`; при переносе можно заменить путь установленным Chromium.
 
 Публикация не заменяет проверки: сначала локальные тесты и сборка, затем push. Старый force-push в `gh-pages` удалён — сборку выполняет CI, исходники и история остаются в `main`.
 

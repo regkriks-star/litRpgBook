@@ -17,6 +17,8 @@
 * Исходники инициализированы в Git (`main`), remote — `regkriks-star/litRpgBook`.
 * Публикация переведена с force-push в `gh-pages` (`psyselfhelp/LitRPG`) на `.github/workflows/deploy.yml`: push в `main` собирает `dist` и публикует GitHub Pages.
 * Удалены `scripts/publish.sh`, `scripts/test-publish.sh` и команда `deploy:psyselfhelp`; `docs/reviews/` исключены из Git (813 МБ QA-снимков).
+* Первый деплой выполнен: <https://regkriks-star.github.io/litRpgBook/> отдаёт 200, `assets/index-*` совпадают с `dist`.
+* Проверки: `typecheck`, 26 unit-тестов, `check:art` (77 WebP), `check:kb`, `build`.
 * Обновлены `README.md`, `architecture.md`, `invariants.md`, `workflows.md`, `decisions.md`, `low-screens.md`.
 
 ## 2026-11-20 · Исправлены ошибки аудита
