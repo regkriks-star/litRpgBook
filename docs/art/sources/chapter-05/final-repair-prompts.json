@@ -1,0 +1,14 @@
+[
+  {
+    "name": "temple-actions-v2",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/temple-actions.png",
+    "prompt": "Edit ONLY the third pose at top RIGHT: remove the rope around Mach's booted ankles completely, keep the ankles/boots close together in precisely same position. He is being lifted by separate ethereal hand sprites at runtime, not by a rope. Reconstruct boot leather under the removed rope. Keep all SIX sprites at EXACT same pixel positions, poses and sizes. Preserve canvas 1536x1024, full transparency alpha and watercolor style. Do not alter any other pose, hands, clothing, backdrop alpha or cell boundaries. No new ropes or bindings.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-37f5787c-611a-452a-b800-f0813e5ab0ba.png"
+  },
+  {
+    "name": "temple-inside-v2",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/temple-inside.png",
+    "prompt": "Edit ONLY the altar on right of this temple background: replace its carved/ornamented surface with a SIMPLE SNOW WHITE PLAIN RECTANGULAR CUBOID altar, clean flat white stone faces, NO relief carvings or patterns or flowers on altar, retain same location proportions floor stairs and perspective. Remove small flower arrangements touching the altar only. Everything else remains EXACTLY unchanged: huge vaulted room, sideview door LEFT, altar RIGHT, golden ivory sage mood, empty people-free scene. Preserve original wide aspect ratio and resolution if possible. Do not add people portal text or objects.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-bf4c3482-7ddc-4ff6-b05b-37bdd09be373.png"
+  }
+]

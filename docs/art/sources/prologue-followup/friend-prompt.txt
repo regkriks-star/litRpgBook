@@ -1,0 +1,7 @@
+Use case: illustration-story
+Asset type: full-bleed landscape background illustration for an existing Russian JRPG visual novel.
+Primary request: show the young Japanese man Katsuo Ootsuka being helped by his only friend Igarashi to leave isolation and return to ordinary life in Kyoto. No new plot events.
+Scene: quiet Kyoto residential lane, a modest apartment doorway opens onto daylight, distant traditional roofs and leafy trees.
+Subjects: two fully clothed adult Japanese male university students, age20. Katsuo has short tousled black hair, slim build, white shirt, dark trousers, hesitant hopeful expression; positioned just left of center, stepping from the shadowed doorway toward the street. Igarashi is just right of center, friendly determined expression, casual muted teal overshirt and dark trousers, extending an open hand toward his friend's shoulder. Natural simple supportive gesture, no medical setting.
+Style: carefully painted anime illustration, textured gouache light, clear expressive contours, muted green/teal palette and warm gold daylight consistent with an anime Kyoto classroom background.
+Composition: wide1536x1024. Faces and the supportive gesture in upper third around center45–65% width, heads around25% image height. Both characters readable in a wide landscape crop. The lower40% is environment extending behind a translucent novel text window. No UI, lettering, captions, watermarks or decorative frames. Keep all hands coherent.

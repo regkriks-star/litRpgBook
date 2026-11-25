@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "images": [
+    {
+      "id": "tantrum",
+      "source": "source/valley.png",
+      "runtime": "public/art/locations/tantrum.webp",
+      "prompt": "Use case: illustration-story. Asset type: full-bleed hand-painted fantasy JRPG and graphic novel background, landscape 1536x1024. A luminous pastoral valley in southern Helis: gently rolling lush green hills, small groves, a narrow winding blue river crossing the LEFT side in the middle distance, a cobblestone road toward a small medieval town of warm pale stone with low walls and two gate towers in the RIGHT middle distance. Wide low playable grassy foreground for separate character sprites, keep focal town and river in middle 65 percent of frame to survive landscape mobile cropping. Soft featherlike clouds, blue sky, warm midday sun, sage green, muted ochre, ivory, pale turquoise. Fine expressive ink lines and sophisticated gouache painterly texture, restrained Japanese RPG meets European graphic novel. Peaceful humorous isekai beginning. No people no animals no lettering no UI no watermark. Do not crop town gates."
+    },
+    {
+      "id": "machLeaves",
+      "source": "source/mach-leaves.png",
+      "runtime": "public/art/characters/mach/leaves.webp",
+      "reference": "public/art/characters/mach/rebirth.webp",
+      "prompt": "Use case: illustration-story. Asset type: genuinely transparent character animation sprite sheet for a hand-painted fantasy JRPG. Input image is identity and rendering STYLE REFERENCE ONLY: Mach, an ADULT male age 28, lean, black and white striped long hair tied back, skeptical face. Create NEW six full-body poses, equal cells 3 columns x 2 rows, overall 1536x1024 landscape. Each cell 512x512. SAME character scale in every frame, head to sole approximately 430 pixels, ground/sole baseline y=480 within EVERY cell, generous transparent margins for movement. Clothing in ALL six frames: bare chest, barefoot, an OPAQUE thick knee-length skirt/wrap of overlapping broad green leaves tied with flexible plant stems, completely covers pelvis, buttocks and upper thighs in every pose. No exposed intimate anatomy, no nudity. Row1 col1 relaxed idle three-quarter facing right; col2 right foot KICK raised forward right, two fists balancing; col3 right-handed PUNCH forward right in fighting stance. Row2 col1 attempting to DODGE, torso leaning back and arms raised; col2 hurt/recoil, one hand to chest, grimace; col3 sitting on the ground eating an orange carrot, knees bent, leaf skirt still fully opaque. No weapons, no armor, no magic. Same pose registration and adult body proportions, do not enlarge seated pose. Gouache watercolor shading, fine ink line, warm ivory highlights and sage leaves as reference. Transparent alpha, no scenery no ground platform no grid lines no labels no checkerboard."
+    },
+    {
+      "id": "rabbit",
+      "source": "source/rabbit-meadow.png",
+      "runtime": "public/art/characters/rabbit/meadow.webp",
+      "prompt": "Use case: illustration-story. Asset type: isolated transparent sprites for a painterly fantasy JRPG, one 2x2 sprite sheet 1024x1024. True transparent alpha background, NO painted background. Equal 512x512 cells, no overlap. Top left: one plump snowy white rabbit, side view facing LEFT, exactly one short spiralling ivory unicorn horn on its forehead, sitting alert. Top right: the exact same rabbit LEAPING left with horn leading and hind feet extended, same body scale. Bottom left: same rabbit dodging backward right, ears back and body twisting, same body scale. Bottom right: one dense leafy horseradish-like bush of large broad lush green veined leaves on long flexible stems, lush botanical plant isolated from ground. All subjects fully visible, 48 pixel clear transparent margin on every side of each cell, no subject crossing cell boundaries. Crisp hand-painted gouache and fine ink outlines, ivory sunshine, sage and turquoise shadows, sophisticated European graphic novel / Japanese RPG. No people, no blood, no text, no grid, no panels, no checkerboard, no floor, no background glow or gradient."
+    },
+    {
+      "id": "tantrumCast",
+      "source": "source/tantrum-cast.png",
+      "runtime": "public/art/characters/tantrum/cast.webp",
+      "prompt": "Use case: illustration-story. Asset type: fantasy visual novel NPC sprite sheet, 1536x1024, true transparent alpha, EXACT 3 columns x 2 rows of 512x512 cells. Every subject fits fully within its own cell with 40 pixels of transparent margin, no overlaps. Common adult human scale about 420px tall, ground baseline 470 within each cell. Six isolated subjects: TOP LEFT a smiling middle-aged sturdy brown-haired farmer Ichiro in an ivory linen shirt, brown work vest, simple trousers and straw hat, seated driving a small rustic wooden cart with a mule, family of fully clothed wife and two daughters riding behind him, use smaller scale to fit complete cart and mule INSIDE THE CELL. TOP MIDDLE a stern dark-haired adult guard Osama in light steel plate and helmet holding an upright spear; TOP RIGHT a slightly older smiling adult guard Hatiko in light steel plate and helmet with a spear. BOTTOM LEFT two fully modestly clothed teen adventurers with short training swords, in ready stance facing RIGHT; BOTTOM MIDDLE THE SAME TWO teen adventurers attacking with swords extended RIGHT, natural non-graphic action poses, identical scale and outfits; BOTTOM RIGHT three fully modestly clothed ADULT priestesses wearing long opaque white ceremonial robes, surprised and stepping aside, one raising hands defensively. No nudity, no gore, no background, no lettering, no labels or grids, no checkerboard. Sophisticated warm hand-painted gouache, fine ink line, European graphic novel / Japanese RPG, sage green, ivory, muted ochre, natural anatomy. Center all subjects and respect strict cell boundaries."
+    }
+  ]
+}

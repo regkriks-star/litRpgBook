@@ -1,0 +1,194 @@
+.chapter-one { background: #132c32; }
+.chapter-one-background img { object-position: center 62%; }
+.chapter-one .reader-controls > .text-button { padding-inline: 4px; gap: 6px; }
+.chapter-one .reader-controls > .primary-button { padding-inline: 12px; gap: 8px; flex-shrink: 0; white-space: nowrap; }
+.chapter-one .reader-progress { flex: 1; min-width: 48px; white-space: nowrap; }
+.chapter-one .reader-progress small { white-space: normal; }
+.chapter-one .atmosphere { background: linear-gradient(#102b3640, transparent 45%, #172b25b0); }
+.chapter-one { --scene-top: 76px; --scene-bottom: calc(38% + 58px); }
+.class-field { position: absolute; inset: var(--scene-top) 4% var(--scene-bottom); perspective: 1000px; }
+.card-sky { position: absolute; inset: 0; }
+.scattered-card { position: absolute; left: var(--x); top: var(--y); width: clamp(30px, 4vw, 62px); aspect-ratio: 2 / 3; padding: 0; border: 1px solid #d4bd82; border-radius: 4px; color: #d4bd82; background: repeating-linear-gradient(45deg, transparent 0 9px, #d4bd821a 9px 10px), linear-gradient(140deg, #30585a, #152a35); box-shadow: inset 0 0 0 3px #18363a, inset 0 0 0 4px #bba875aa, 0 4px 20px #071c3466; transform: translate(-50%, -50%) rotate(var(--tilt)); transition: opacity .75s var(--delay), scale .75s var(--delay); animation: cards-arrive .7s var(--delay) both; }
+.scattered-card span { font-size: 25px; }
+.scattered-card:disabled { opacity: .85; cursor: default; }
+.scattered-card.vanished { opacity: 0; scale: .35; pointer-events: none; }
+.scattered-card.second-filter { animation: second-filter 1.4s ease both; }
+@keyframes second-filter { 0%, 45% { opacity: .85; scale: 1; } 100% { opacity: 0; scale: .35; } }
+.class-invitation { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; pointer-events: none; text-shadow: 0 2px 8px #031d26, 0 0 14px #031d26; }
+.class-invitation strong { display: block; font: 32px 'Alegreya', serif; color: #f4e5bd; }
+.class-invitation span { font-size: 14px; }
+.revealed-card { position: absolute; left: 33%; top: 50%; height: 100%; width: min(35%, 330px); transform: translate(-50%, -50%); perspective: 1000px; animation: card-approach .85s ease both; }
+.card-turn { height: 100%; width: 100%; transform-style: preserve-3d; animation: card-turn .85s ease both; }
+.card-back { position: absolute; inset: 0; display: grid; place-items: center; border: 1px solid #d4bd82; border-radius: 8px; font-size: 70px; color: #d4bd82; background: repeating-linear-gradient(45deg, transparent 0 12px, #d4bd8222 12px 13px), #173a3f; transform: rotateY(180deg); backface-visibility: hidden; }
+.illustrated-card { display: block; position: relative; width: 100%; height: 100%; overflow: hidden; border: 1px solid #d4bd82; border-radius: 7px; box-shadow: 0 8px 35px #02192488, inset 0 0 0 3px #bba87566; backface-visibility: hidden; background: #193b39; }
+.card-painting { position: absolute; left: 0; top: 0; width: 100%; aspect-ratio: 2 / 3; background-size: 300% 200%; background-repeat: no-repeat; }
+.card-copy { position: absolute; inset: auto 0 0; max-height: 62%; padding: 13px 16px; display: flex; flex-direction: column; background: linear-gradient(110deg, #0b252be8, #233c35dc); border-top: 1px solid #ddd0a866; }
+.card-copy > strong { flex: 0 0 auto; font: 500 clamp(20px, 2vw, 28px)/1.05 'Alegreya', serif; color: #ffebba; margin-bottom: 8px; }
+.card-description { display: block; overflow-y: auto; min-height: 0; font: 18px/1.3 'Alegreya', serif; white-space: pre-wrap; scrollbar-width: thin; scrollbar-color: #d4bd82 transparent; }
+.card-amendment { display: block; padding-top: 8px; margin-top: 8px; border-top: 1px solid #d4bd8266; color: #ffe5a5; font: 18px/1.2 'Alegreya', serif; animation: amendment .9s ease both; }
+.card-inspect { position: absolute; right: -50px; top: 0; width: 44px; height: 44px; border: 1px solid #d4bd82; border-radius: 50%; background: #16332fe8; font-size: 26px; }
+.card-blood { filter: drop-shadow(0 0 16px #650a18); }
+.card-lady { filter: drop-shadow(0 0 16px #efd09166); }
+.card-departing { opacity: 0; pointer-events: none; animation: card-depart .85s ease both; }
+.card-blood.card-departing { animation-name: card-dissolve; }
+@keyframes card-dissolve { from { opacity: 1; filter: blur(0) drop-shadow(0 0 16px #650a18); } to { opacity: 0; filter: blur(12px); } }
+.gift-cards { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 3vw, 40px); max-width: 1050px; margin: auto; }
+.gift-card { animation: gift-arrive .65s ease both; }
+.gift-card:nth-child(2) { animation-delay: .1s; }
+.gift-card:nth-child(3) { animation-delay: .2s; }
+.gift-card .card-copy { max-height: 60%; }
+.gift-hit { position: absolute; inset: 0; background: transparent; }
+.gift-card .card-copy { pointer-events: none; }
+.gift-card .card-description { pointer-events: auto; position: relative; z-index: 1; }
+.being-read, .chosen-gift { border-color: #fff2b5; box-shadow: 0 0 24px #f5cd6866; }
+.card-detail-dialog { padding: 12px; border: 1px solid #d4bd82; border-radius: 10px; color: #f7f7f2; background: #162e2b; width: min(94vw, 440px); max-height: 94dvh; overflow-y: auto; }
+.card-detail-dialog::backdrop { background: #02151cd9; }
+.card-detail { height: min(67dvh, 640px); min-height: 180px; }
+.card-detail .card-copy { max-height: 74%; }
+.card-detail-close { position: absolute; right: 16px; top: 16px; z-index: 2; background: #153831e6; }
+.card-reaction { padding: 12px 6px 4px; font: 18px/1.3 'Alegreya', serif; color: #f4dda9; }
+.card-detail-return { display: block; margin: 6px auto 0; min-height: 44px; }
+.creation-panel { position: absolute; top: var(--scene-top); bottom: var(--scene-bottom); left: 6%; width: 46%; display: grid; grid-template-columns: 45% 55%; grid-template-rows: auto minmax(0, 1fr); border: 1px solid #bdc2a688; background: linear-gradient(110deg, #12342cc4, #142b3280); border-radius: 5px 20px 5px 5px; overflow: hidden; }
+.creation-panel > header { grid-column: 1 / -1; padding: 12px 20px; border-bottom: 1px solid #d4bd8266; background: #193a3388; }
+.creation-panel h3 { font-size: 30px; color: #f5dfab; }
+.creation-panel header span { font-size: 12px; color: #c6cec4; }
+.appearance-portrait { background-size: 300% auto; background-position: calc(var(--appearance) * 50%) 32%; background-repeat: no-repeat; align-self: stretch; }
+.appearance-changing { animation: appearance-cycle 5s steps(1) both; }
+.appearance-forming { opacity: .5; filter: blur(5px); }
+.creation-properties { min-height: 0; max-height: 100%; overflow-y: auto; padding: 20px 15px; align-self: center; font: 21px/1.3 'Alegreya', serif; scrollbar-width: thin; }
+.creation-properties p { margin-bottom: 14px; }
+.creation-properties small, .name-announcement { display: block; font: 12px/1.5 'Golos Text', sans-serif; color: #becbc2; }
+.appearance-colors { color: #efd89f; }
+.blue-choice { display: none; animation: blue-choice 5s steps(1) both; }
+.green-choice { animation: green-choice 5s steps(1) both; }
+.creation-properties label { display: block; font-size: 18px; margin-bottom: 8px; }
+.creation-properties input { width: 100%; padding: 12px 10px; margin-bottom: 10px; border: 1px solid #d4bd82; border-radius: 3px; color: #f8e8c1; -webkit-text-fill-color: #f8e8c1; background: #092822a8; font-size: 19px; opacity: 1; }
+.reborn-position { position: absolute; height: calc(100% - var(--scene-top) - var(--scene-bottom)); aspect-ratio: 1 / 2; left: 21%; top: var(--scene-top); pointer-events: none; transition: left .8s; }
+/* The rightmost 4% is the gutter: a few pixels from the next sprite spill into it. */
+.reborn-hero { position: relative; height: 100%; width: 100%; background-size: 400% 100%; background-position: calc(var(--body-frame) * 100% / 3) 0; background-repeat: no-repeat; clip-path: inset(0 4% 0 0); }
+.mosaic-censor { position: absolute; display: grid; grid-template-columns: repeat(8, 1fr); grid-template-rows: repeat(6, 1fr); background: #ad947b; }
+.mosaic-censor i { display: block; }
+.approaching { left: 38%; }
+.falling { opacity: .65; transform: translateY(6vh) scale(.4); animation: world-fall 1.4s ease-in both; }
+.extra-pose.goddess-sprite { overflow: visible; }
+.goddess-extra-frame { position: absolute; background-repeat: no-repeat; }
+.spell-circles { display: none; position: absolute; left: 25%; top: 20%; width: 50vh; aspect-ratio: 1; }
+.spell-circles i { position: absolute; inset: 0; border: 2px solid #ffdf9299; border-radius: 50%; box-shadow: 0 0 25px #ffe0a244; }
+.spell-circles i:nth-child(2) { inset: 12%; border-style: dashed; }
+.spell-circles i:nth-child(3) { inset: 22%; border-radius: 0; rotate: 45deg; }
+.cue-rewrite .spell-circles, .cue-creation .spell-circles, .cue-summon .spell-circles { display: block; animation: spell-turn 3s ease-out both; }
+.cue-warning .atmosphere { background: #000e; }
+.cue-warning .goddess-sprite { filter: brightness(.5) drop-shadow(0 0 8px #b02030); }
+.cue-strike .divine-seal { animation: seal-light .5s ease-out; }
+.cue-rebirth .atmosphere { animation: rebirth-flash 1.1s both; }
+.cue-choke .soul { animation: soul-startle .5s 2; }
+.soul-entering { opacity: 0; animation: soul-enter 1.4s ease-in both; }
+@keyframes cards-arrive { from { opacity: 0; translate: 0 20px; } }
+@keyframes card-approach { from { translate: var(--from-x) var(--from-y); scale: .18; } }
+@keyframes card-turn { from { transform: rotateY(180deg); } to { transform: rotateY(0); } }
+@keyframes card-depart { from { opacity: 1; translate: 0; scale: 1; } to { opacity: 0; translate: -18vw -8vh; scale: .15; } }
+@keyframes gift-arrive { from { opacity: 0; translate: 0 -15px; } }
+@keyframes amendment { from { opacity: 0; filter: blur(6px); } to { opacity: 1; filter: blur(0); } }
+@keyframes appearance-cycle { 0%, 45% { --appearance: 0; } 50%, 100% { --appearance: 1; } }
+@keyframes blue-choice { 0%, 45% { display: inline; } 50%, 100% { display: none; } }
+@keyframes green-choice { 0%, 45% { display: none; } 50%, 100% { display: inline; } }
+@keyframes spell-turn { from { opacity: 0; transform: rotate(-70deg) scale(.5); } 40% { opacity: 1; } to { transform: rotate(30deg); } }
+@keyframes soul-enter { from { opacity: 1; translate: 0 0; } to { opacity: 0; translate: 4vw -8vh; scale: .15; } }
+@keyframes rebirth-flash { 0% { background: #fff7d6; } 40% { background: #000; } 100% { background: transparent; } }
+@keyframes world-fall { from { opacity: 1; transform: none; } to { opacity: .65; transform: translateY(6vh) scale(.4); } }
+.audience-scene { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.goddess-position { position: absolute; top: 22%; left: 55%; width: min(45vh, 42vw); aspect-ratio: 1; }
+/* 32 source pixels of padding on all sides, preserving the original scene scale. */
+.goddess-sprite { position: absolute; top: -6.25%; left: -6.25%; width: 112.5%; height: 112.5%; overflow: hidden; filter: drop-shadow(0 8px 22px #97c5c82b); transition: filter .35s; }
+.goddess-poses { display: flex; width: 100%; height: 100%; transform: translateX(calc(var(--pose) * -100%)); }
+.goddess-cell { position: relative; flex: 0 0 100%; height: 100%; overflow: hidden; }
+/* The last 8 source rows contain the next row's crown tip, outside this pose. */
+.goddess-frame { position: absolute; background-repeat: no-repeat; background-size: 300% 200%; clip-path: inset(0 0 1.5625%); }
+.speaking-soul .goddess-sprite { filter: brightness(.84) saturate(.85); }
+.soul-position { position: absolute; top: 33%; left: 26%; width: clamp(52px, 7vw, 100px); aspect-ratio: 1; }
+.soul-motion { width: 100%; height: 100%; animation: soul-hover 5s ease-in-out infinite; }
+.soul { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 40% 36%, #fff 0%, #e9ffff 12%, #a3eafa 35%, #4dadda88 61%, #399ad200 73%); box-shadow: 0 0 35px #91eaff77, 0 0 100px #4ebaff55; }
+.soul i { position: absolute; inset: -16%; border: 1px solid #bbf1ff88; border-radius: 50%; transform: rotateX(55deg) rotateZ(30deg); }
+.soul i:nth-child(2) { transform: rotateY(60deg) rotateZ(-30deg); }
+.soul i:nth-child(3) { inset: -40%; border-style: dotted; opacity: .55; }
+.speaking-soul .soul { animation: soul-speech 1.8s ease-in-out 2; }
+.divine-seal { position: absolute; top: 8%; left: 46%; width: min(48vh, 40vw); aspect-ratio: 1; border: 1px solid #e1c77a55; border-radius: 50%; opacity: .55; }
+.divine-seal i { position: absolute; inset: 8%; border: 1px solid #e1c77a66; transform: rotate(45deg); }
+.divine-seal i:nth-child(2) { transform: rotate(15deg); }
+.divine-seal i:nth-child(3) { inset: 15%; border-radius: 50%; }
+.voice-rings { position: absolute; inset: 0; }
+.voice-rings i { position: absolute; inset: 0; border: 2px solid #d4faff; border-radius: 50%; opacity: 0; }
+.cue-grant .voice-rings i { animation: voice-release 1.8s ease-out both; }
+.cue-grant .voice-rings i:nth-child(2) { animation-delay: .3s; }
+.cue-grant .voice-rings i:nth-child(3) { animation-delay: .6s; }
+.cue-grant .divine-seal { animation: seal-light 1.8s ease-out; }
+.cue-arrival .soul-position { animation: soul-arrive 1.8s ease-out both; }
+.cue-silence .soul-motion { animation-play-state: paused; }
+.cue-alarm .soul-position { animation: soul-startle .8s; }
+.fiol-shadow { position: absolute; inset: 15% 0 18%; opacity: 0; background: radial-gradient(ellipse at 35% 75%, #190f2be6, #30183390 28%, transparent 60%); transform-origin: 35% 80%; }
+.cue-shadow .fiol-shadow { opacity: .85; animation: shadow-spread 3s ease-out both; }
+@keyframes soul-hover { 50% { transform: translateY(-9px); } }
+@keyframes soul-speech { 50% { transform: scale(1.12); filter: brightness(1.3); } }
+@keyframes soul-arrive { from { opacity: 0; transform: translate(-80px, 40px) scale(.15); } to { opacity: 1; transform: none; } }
+@keyframes voice-release { from { opacity: .9; transform: scale(.5); } to { opacity: 0; transform: scale(3); } }
+@keyframes seal-light { 35% { opacity: 1; box-shadow: 0 0 60px #f1d88b; transform: rotate(30deg); } }
+@keyframes soul-startle { 30% { transform: translateX(-18px) scale(.86); } }
+@keyframes shadow-spread { from { opacity: 0; transform: scale(.15); } to { opacity: .85; transform: scale(1); } }
+@media (max-height: 600px) and (orientation: landscape) {
+  .chapter-one { --scene-top: 48px; --scene-bottom: calc(45% + 30px); }
+  .class-field { inset-inline: 3%; }
+  .class-invitation strong { font-size: 20px; }
+  .class-invitation span { font-size: 12px; }
+  .card-sky { inset: 22px; }
+  .scattered-card { width: 44px; height: 44px; aspect-ratio: auto; border: 0; background: transparent; box-shadow: none; }
+  .scattered-card::before { content: ''; position: absolute; inset: 2px 9px; border: 1px solid #d4bd82; border-radius: 4px; background: repeating-linear-gradient(45deg, transparent 0 9px, #d4bd821a 9px 10px), linear-gradient(140deg, #30585a, #152a35); box-shadow: inset 0 0 0 3px #18363a, inset 0 0 0 4px #bba875aa; }
+  .scattered-card span { position: relative; }
+  .scattered-card span { font-size: 18px; }
+  .revealed-card { width: 46%; }
+  .card-copy { max-height: 80%; padding: 5px 8px; }
+  .card-copy > strong { font-size: 18px; margin-bottom: 3px; }
+  .card-description { font-size: 16px; line-height: 1.2; }
+  .card-amendment { padding-top: 3px; margin-top: 3px; font-size: 15px; }
+  .gift-cards { gap: 8px; }
+  .gift-card .card-copy { max-height: 77%; }
+  .card-inspect { font-size: 20px; }
+  .card-detail-dialog { width: min(94vw, 760px); padding: 8px; }
+  .card-detail { height: 58dvh; min-height: 0; }
+  .card-detail .card-copy { left: 32%; top: 0; max-height: 100%; padding: 12px; }
+  .card-detail .card-description { font-size: 18px; }
+  .card-detail .card-painting { width: 40%; }
+  .card-detail-close { right: 10px; top: 10px; }
+  .card-reaction { font-size: 16px; padding: 6px; }
+  .card-detail-return { margin: 0 auto; }
+  .creation-panel { width: 54%; grid-template-columns: 34% 66%; grid-template-rows: 26px minmax(0, 1fr); }
+  .creation-panel > header { padding: 1px 10px; display: flex; gap: 14px; align-items: center; }
+  .creation-panel h3 { font-size: 20px; }
+  .creation-panel header span { font-size: 10px; }
+  .creation-properties { height: 100%; align-self: stretch; padding: 4px 8px; font-size: 16px; }
+  .creation-properties p { margin-bottom: 3px; }
+  .creation-properties small, .name-announcement { font-size: 10px; }
+  .creation-properties label { font-size: 14px; margin-bottom: 3px; }
+  .creation-properties input { font-size: 17px; padding: 3px 6px; margin-bottom: 3px; }
+  .reborn-position { left: 24%; }
+  .reborn-position.approaching { left: 45%; }
+  .goddess-position { top: 29%; left: 61%; width: 36vh; }
+  .divine-seal { top: 12%; left: 50%; width: 40vh; }
+  .soul-position { top: 28%; width: 42px; left: 26%; }
+  .chapter-one .story-window.prologue-reading { bottom: max(12px, env(safe-area-inset-bottom)); height: 45%; min-height: 144px; padding: 22px 18px 8px; }
+  .chapter-one .reader-controls { padding-top: 3px; gap: 6px; }
+  .chapter-one .reader-controls button { min-height: 44px; padding-block: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chapter-one *, .chapter-one *::before, .chapter-one *::after { animation: none !important; transition: none !important; }
+}
+/* Step between registered poses; the throne stays fixed during every gesture. */
+.cue-grant .goddess-poses { animation: dataris-voice .7s steps(1) both; }
+.cue-puzzled .goddess-poses { animation: dataris-puzzled .8s steps(1) both; }
+.cue-alarm .goddess-poses { animation: dataris-alarm .65s steps(1) both; }
+.cue-resolve .goddess-poses { animation: dataris-resolve .55s steps(1) both; }
+.cue-cards .goddess-poses { animation: dataris-cards .8s steps(1) both; }
+@keyframes dataris-voice { 0% { --pose: 0; } 35%, 100% { --pose: 1; } }
+@keyframes dataris-puzzled { 0% { --pose: 0; } 25% { --pose: 1; } 55%, 100% { --pose: 2; } }
+@keyframes dataris-alarm { 0% { --pose: 2; } 25% { --pose: 1; } 50%, 100% { --pose: 3; } }
+@keyframes dataris-resolve { 0% { --pose: 3; } 30% { --pose: 0; } 65%, 100% { --pose: 4; } }
+@keyframes dataris-cards { 0% { --pose: 0; } 40%, 100% { --pose: 5; } }

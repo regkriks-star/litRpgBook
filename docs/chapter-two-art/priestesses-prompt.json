@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "source": "source/priestesses.png",
+  "runtime": "public/art/characters/tantrum/priestesses.webp",
+  "reference": "source/tantrum-cast.png",
+  "prompt": "Use case: illustration-story. Asset type: one isolated GROUP sprite, transparent alpha background, landscape 1536x1024. Input image is a STYLE AND CHARACTER reference only; preserve the three ADULT women at the BOTTOM RIGHT in the input, with the same white ceremonial dresses and faces. Generate ONLY these three women together, full bodies head to foot visible, with space around the group. Three adult priestesses in opaque modest long white-and-ivory robes, one blonde with both hands raised in surprise, one black-haired with hand near chest, one auburn-haired stepping aside and looking left startled. Gouache watercolor shading, fine ink line, sage shadows, ivory sunlight. They are surprised and moving aside as someone approaches. No weapons anywhere: no swords, no knife tips, no spear, no unrelated fragments or other people. Genuinely transparent background with no scenery, no floor or shadows outside the figures, no text, no checkboard. Keep the group inside middle 80 percent width, leave 60 pixels clear transparent border. No nudity."
+}

@@ -1,0 +1,157 @@
+.chapter-three { --reading-height: 35%; --scene-top: 110px; --scene-bottom: calc(var(--reading-height) + 66px); }
+.chapter-three .chapter-scene { overflow: visible; }
+.chapter-three .prologue-illustration img { object-position: center 65%; }
+.chapter-three.c3-roofs .prologue-illustration img { object-position: center bottom; }
+.chapter-three.c3-shore .prologue-illustration img { transform: scaleX(-1); object-position: center bottom; }
+.chapter-three.c3-night .prologue-illustration { filter: brightness(.55) saturate(.65); }
+.c3-location { position: absolute; left: 0; top: -9px; z-index: 2; padding: 5px 10px; font-size: 12px; background: #20392ed9; border-radius: 3px; }
+.c3-actors { position: absolute; inset: 22px 0 5px; pointer-events: none; }
+.c3-hero { position: absolute; left: 0; bottom: 0; height: 100%; width: 45%; display: flex; align-items: end; justify-content: center; }
+.town-sprite { position: relative; height: 100%; max-width: 100%; flex-shrink: 0; }
+.town-sprite > div { position: absolute; width: 100%; height: 100%; background-repeat: no-repeat; }
+.c3-hero > .meadow-hero { height: 100%; }
+.c3-captain { position: absolute; left: 41%; bottom: 0; width: 37%; height: 110%; display: flex; flex-direction: column; align-items: center; }
+.c3-captain .town-sprite, .c3-npc .town-sprite { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 100%; width: auto; max-width: none; }
+.c3-captain > .character-label, .c3-npc > .character-label { position: absolute; top: -16px; z-index: 2; }
+.c3-supporting-guards { position: absolute; right: -3%; bottom: 0; height: 68%; width: 40%; opacity: .9; }
+.c3-npc { position: absolute; right: 6%; bottom: 0; height: 100%; width: 39%; display: flex; flex-direction: column; align-items: center; }
+.c3-rabbit { position: absolute; right: 12%; bottom: 0; width: 22%; height: 80%; display: flex; flex-direction: column; justify-content: flex-end; }
+.c3-rabbit .meadow-sprite { min-height: 0; width: auto; height: 70%; }
+.c3-rabbit-remains { height: 70%; opacity: 0; animation: c3-rabbit-dissolve .75s ease-out both; }
+.c3-rabbit-remains .meadow-sprite { height: 100%; }
+.c3-rabbit.rabbit-quick > .meadow-sprite { animation: c3-rabbit-step .5s ease-out both; }
+.c3-rabbit.rabbit-reply > .meadow-sprite { animation: c3-rabbit-lunge .25s ease-out both; }
+.c3-victory, .c3-hit-result, .c3-reply-result { position: absolute; z-index: 3; padding: 4px 8px; border-radius: 4px; color: #fff2c9; background: #203e34ee; font-size: 12px; line-height: 1.25; text-align: center; }
+.c3-victory { inset: auto 0 15%; color: #d8f3bb; border: 1px solid #a7ba86; }
+.c3-hit-result { bottom: 56%; left: -30%; right: -30%; animation: c3-hit .45s ease-out both; }
+.c3-reply-result { left: 8%; top: 24%; max-width: 34%; animation: c3-hit .45s ease-out both; }
+.c3-hit-result.critical, .c3-reply-result.critical { color: #ffd39e; border: 1px solid #e8a86c; }
+.c3-streak-summary { position: absolute; right: 15%; top: 20%; display: grid; gap: 4px; padding: 12px 18px; background: #203e34ee; border: 1px solid #a7ba86; border-radius: 4px; font-size: 14px; }
+.c3-streak-summary b { font-size: 20px; color: #efdcb1; }
+.c3-streak-summary small { font-size: 12px; }
+.c3-city-life { position: absolute; inset: 0; }
+.c3-residents { position: absolute; bottom: 20%; height: 50%; }
+.c3-residents .town-sprite { max-width: none; }
+.city-children { left: 40%; bottom: 15%; animation: c3-children-route 1.6s ease-out both; }
+.city-sweeper { left: 60%; bottom: 29%; height: 39%; }
+.city-sweeper .town-sprite > div { animation: c3-sweep .65s ease-in-out 2; }
+.city-healer { left: 36%; bottom: 34%; height: 38%; animation: c3-healer-route 1.8s ease-out both; }
+.city-adults { left: 49%; bottom: 43%; height: 33%; animation: c3-adults-route 2s ease-out both; }
+.c3-hero > .chapter-health { position: absolute; top: 0; left: 0; width: 42%; }
+.c3-return-guards { position: absolute; right: 3%; bottom: 0; height: 85%; width: 50%; }
+.c3-actions { position: absolute; bottom: -44px; left: 0; right: 0; z-index: 4; display: flex; justify-content: center; gap: 10px; }
+.c3-actions button { min-height: 44px; padding: 7px 15px; font-size: 14px; }
+.c3-actions .item-icon { width: 30px; height: 30px; }
+.c3-repair-state { position: absolute; z-index: 3; inset: 16px 0 5px; pointer-events: none; }
+.c3-prop { position: absolute; bottom: 0; min-width: 44px; min-height: 44px; padding: 0; background: transparent; pointer-events: auto; }
+.c3-prop-art { display: block; width: 100%; height: 100%; background-repeat: no-repeat; }
+.c3-tile { left: 22%; width: auto; height: 20%; }
+.c3-chimney { left: 32%; width: auto; height: 68%; }
+.c3-prop-label { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap; padding: 6px 12px; border: 1px solid #cfc294; border-radius: 3px; background: #173b32f5; font-size: 12px; color: #f1e1b2; }
+.chapter-three .c3-prop:disabled { opacity: 1; }
+.c3-prop.repaired .c3-prop-label { color: #d6f0b9; border-color: #9bb87f; }
+.c3-tile.repaired .c3-prop-art { animation: tile-fit .35s ease-out both; }
+.c3-chimney.repaired .c3-prop-art { animation: chimney-paint .6s ease-out both; }
+.c3-menu .chapter-menu-body { font-size: 16px; line-height: 1.45; }
+.c3-menu h3 { font: 25px 'Alegreya', Georgia, serif; color: #e8d89d; margin-bottom: 7px; }
+.c3-menu small { font-size: 12px; color: #cbd5bd; }
+.c3-menu button { min-height: 44px; }
+.c3-inventory .inventory-character .town-sprite, .c3-inventory .inventory-character .meadow-hero { height: calc(100% - 52px); }
+.c3-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.c3-stat { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 350px; border-bottom: 1px solid #b6c59855; }
+.c3-stat button { padding: 6px 18px; min-width: 55px; color: #20392e; background: #dfdab5; border-radius: 3px; }
+.c3-source-status { grid-template-columns: 1fr 1fr; }
+.c3-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.c3-tabs button { display: flex; gap: 6px; align-items: center; border: 1px solid #bbc29877; background: #385b4877; border-radius: 4px; padding: 6px 14px; font-size: 14px; }
+.c3-tabs button[aria-pressed="true"] { color: #20392e; background: #e5d6a6; }
+.c3-description { font: 22px/1.45 'Alegreya', Georgia, serif; max-width: 1000px; }
+.c3-description p + p { margin-top: 10px; }
+.c3-description .primary-button { font-family: 'Golos Text', sans-serif; font-size: 14px; margin-top: 10px; }
+.c3-streak { height: 8px; max-width: 350px; background: #112b20; border: 1px solid #d4bd8266; margin-top: 9px; }
+.c3-streak span { display: block; height: 100%; background: #ddc886; transition: width .3s; }
+.c3-trade { display: grid; gap: 12px; }
+.c3-money { color: #f4dfa7; }
+.c3-offers { display: flex; flex-wrap: wrap; gap: 10px; }
+.c3-offers button, .c3-knife-offer { display: flex; align-items: center; gap: 12px; padding: 9px 14px; border: 1px solid #cfc29488; border-radius: 4px; background: #44624b88; text-align: left; }
+.c3-offers .item-icon, .c3-knife-offer .item-icon { width: 52px; height: 52px; }
+.c3-offers span, .c3-knife-offer > span { display: grid; }
+.c3-food-offer { justify-self: start; }
+.c3-knife-offer { justify-self: start; }
+.c3-log { position: relative; font: 17px/1.25 'Alegreya', Georgia, serif; text-align: left; width: 100%; }
+.c3-log summary { cursor: pointer; max-height: 2.5em; overflow: auto; padding: 3px; }
+.c3-log > div { position: absolute; z-index: 19; bottom: 100%; left: 0; right: 0; max-height: 30dvh; padding: 10px; overflow: auto; background: #18392ffb; border: 1px solid #d4bd82; }
+.c3-log p + p { margin-top: 8px; }
+.chapter-three .chapter-restart { left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(520px, 90%); }
+.chapter-three .game-notice { top: auto; bottom: calc(var(--reading-height) + 25px); }
+.c3-battle .reader-progress small { display: none; }
+.captain-jump { animation: captain-jump .45s ease both; }
+.giving-club { animation: offer-club .65s ease both; }
+.teaching-hunter::before { content: ''; position: absolute; inset: 5%; border: 2px solid #e7d49188; border-radius: 50%; box-shadow: 0 0 25px #e7d49177; animation: hunter-teach .8s both; }
+.entering-town { left: 50%; width: 33%; height: 60%; bottom: 15%; z-index: 1; animation: enter-town 1.4s both; }
+.leaving-market { left: -5%; animation: leave-market 1s both; }
+.son-approaches { right: 13%; animation: son-approach .9s both; }
+@keyframes captain-jump { 40% { transform: translateY(-12%); } }
+@keyframes offer-club { from { transform: translateX(8%); } to { transform: none; } }
+@keyframes hunter-teach { from { opacity: 0; transform: scale(.65); } 45% { opacity: 1; } to { opacity: .4; transform: scale(1); } }
+@keyframes enter-town { from { left: 0; height: 100%; bottom: 0; } to { left: 50%; height: 60%; bottom: 15%; } }
+@keyframes leave-market { from { left: 0; } to { left: -5%; } }
+@keyframes son-approach { from { right: 0; } to { right: 13%; } }
+@keyframes tile-fit { from { transform: translateY(-10px); opacity: .4; } to { transform: none; opacity: 1; } }
+@keyframes chimney-paint { from { clip-path: inset(0 0 100%); } to { clip-path: inset(0); } }
+@keyframes c3-children-route { from { transform: translateX(-38%); } to { transform: none; } }
+@keyframes c3-healer-route { from { transform: translateX(55%); } to { transform: none; } }
+@keyframes c3-adults-route { from { transform: translateX(-30%); } to { transform: none; } }
+@keyframes c3-sweep { 50% { transform: translateX(-4px); } }
+@keyframes c3-rabbit-step { from { transform: translateX(12%); } to { transform: none; } }
+@keyframes c3-rabbit-lunge { 50% { transform: translateX(-25%); } }
+@keyframes c3-rabbit-dissolve { from { opacity: .7; filter: none; } to { opacity: 0; filter: blur(6px); } }
+@keyframes c3-hit { from { transform: translateY(8px); opacity: .3; } to { transform: none; opacity: 1; } }
+@media (max-height: 560px) and (orientation: landscape), (max-width: 950px) and (orientation: landscape) {
+  .chapter-three { --reading-height: 132px; --scene-top: 48px; --scene-bottom: calc(var(--reading-height) + 20px); }
+  .chapter-three .c3-location { top: 0; font-size: 10px; padding: 2px 7px; }
+  .c3-actors { inset: 16px 0 0; }
+  .c3-captain { height: 110%; width: 35%; left: 38%; }
+  .c3-captain > .character-label { position: absolute; top: 0; left: 48%; z-index: 2; }
+  .c3-supporting-guards { right: -3%; width: 35%; height: 75%; }
+  .c3-npc { width: 38%; height: 100%; right: 8%; }
+  .c3-npc .character-label { position: absolute; top: 0; right: 0; }
+  .c3-actions { bottom: 0; gap: 8px; }
+  .c3-actions button { font-size: 12px; padding: 4px 9px; min-height: 44px; }
+  .c3-prop-label { top: auto; bottom: 0; font-size: 11px; padding: 4px 6px; }
+  .c3-tile .c3-prop-label { left: 0; transform: translateX(-80%); }
+  .c3-chimney .c3-prop-label { left: 80%; }
+  .c3-menu { top: 48px; bottom: calc(var(--reading-height) + 24px); }
+  .c3-menu .chapter-menu-body { font-size: 14px; padding: 5px 10px; }
+  .c3-menu h3 { font-size: 20px; }
+  .c3-menu small { font-size: 11px; }
+  .c3-inventory .inventory-character .town-sprite, .c3-inventory .inventory-character .meadow-hero { position: absolute; top: 0; right: 0; height: calc(100% - 19px); max-width: 67%; }
+  .c3-inventory .inventory-hint { display: none; }
+  .c3-inventory .inventory-grid { grid-template-columns: repeat(8, minmax(44px, 1fr)); min-height: 44px; }
+  .c3-stats { gap: 15px; }
+  .c3-stat { gap: 9px; }
+  .c3-stat button { padding: 3px 12px; }
+  .c3-tabs { gap: 4px; margin-bottom: 6px; }
+  .c3-tabs button { font-size: 12px; padding: 3px 8px; }
+  .c3-description { font-size: 18px; line-height: 1.35; }
+  .c3-description .primary-button { font-size: 12px; }
+  .c3-offers { gap: 5px; }
+  .c3-offers button { gap: 5px; padding: 4px 8px; font-size: 12px; }
+  .c3-offers .item-icon, .c3-knife-offer .item-icon { width: 40px; height: 40px; }
+  .c3-trade { gap: 6px; }
+  .c3-trade .primary-button { font-size: 12px; padding: 5px 10px; }
+  .c3-hero > .chapter-health { top: 0; left: 0; min-width: 85px; }
+  .c3-rabbit { height: 90%; width: 24%; right: 10%; }
+  .c3-hit-result { bottom: 46%; left: -15%; right: -15%; padding: 2px 4px; font-size: 10px; }
+  .c3-reply-result { top: 19%; left: 4%; max-width: 38%; padding: 2px 4px; font-size: 10px; }
+  .c3-victory { bottom: 38%; font-size: 10px; padding: 3px; }
+  .c3-streak-summary { right: 12%; top: 15%; padding: 5px 10px; font-size: 12px; }
+  .c3-streak-summary b { font-size: 16px; }
+  .c3-streak-summary small { font-size: 10px; }
+  .c3-log { font-size: 14px; }
+  .c3-log summary { max-height: 1.4em; }
+  .chapter-three .game-notice { bottom: calc(var(--reading-height) + 20px); max-width: 230px; }
+  .chapter-three.status-reading .c3-menu { bottom: 74px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chapter-three *, .chapter-three *::before { animation: none !important; transition: none !important; }
+}

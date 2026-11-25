@@ -1,0 +1,19 @@
+[
+  {
+    "name": "duel-v2",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/duel.png",
+    "prompt": "Edit this transparent game sprite atlas to repair CELL ISOLATION ONLY. Keep exactly the same eight poses characters order clothes and watercolor style, preserve transparent background. Exactly 4 columns 2 rows, each isolated figure MUST FIT inside its own cell with at least 24px transparent gutter on every side. Recompose the long sword in cell 1 so it DOES NOT cross into cell 0 or 2: shorten its screen projection by a steeper upward-left angle, keep long sword recognizable. Leave generous transparent separation between all cells. Do not crop any head sword feet cloak or hands. Keep standing character head/body scales consistent across frames; body landmarks not silhouette extent. No grid, labels, background, extra figures. Make canvas wider if needed.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-d97453e0-5f24-43da-a859-67db7b6d5ab1.png"
+  },
+  {
+    "name": "temple-cast-v2",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/temple-cast.png",
+    "prompt": "Edit this transparent six-figure sprite sheet to fix strict cell isolation and clear gutters. Preserve every character identity costume pose age style and order. Exactly THREE columns TWO rows. Each figure including all shawls robes arms and sticks must be fully inside its own rectangular cell with at least 25px transparent gutters between neighbours. Tall priestess top LEFT, guide top MIDDLE, unblessed adult novice top RIGHT; blessed adult novice bottom LEFT, stooped grandmother bottom MIDDLE, sprightly grandmother bottom RIGHT. In particular the bottom LEFT novice hands and robe MUST NOT overlap grandmother bottom MIDDLE, tall priestess robes MUST NOT enter guide cell. Shrink or widen canvas to retain whole figures and equal scale within novice and grandmother pairs. Genuinely transparent empty background, no matte or shadows outside figures, no words no grid.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-69b98b9c-0066-4a21-98bf-5de7cdcccba0.png"
+  },
+  {
+    "name": "close-actions",
+    "prompt": "Use case illustration-story. Transparent watercolor anime JRPG sprite atlas landscape, exactly TWO columns TWO rows, FOUR separate full-body action vignettes, all safely within cell boundaries with wide transparent gutters. Mach adult strong muscular man black shoulder-length hair with WHITE forelock, brown vest cream rolled sleeve shirt brown trousers boots. Wogunn young blond male in steel breastplate cream shirt navy cape brown trousers boots, taller head same scale. Read order: 0 Mach LEFT delivering a forward kick RIGHT to knock long sword out of Wogunn's hand, Wogunn RIGHT staggers; 1 Mach LEFT leaning head RIGHT into Wogunn forehead, Wogunn RIGHT recoils from forehead strike; 2 Mach LEFT raising bent knee into armored Wogunn RIGHT, Wogunn doubled over, combat only no sexual framing, no nudity no gore; 3 Mach alone on LEFT carrying a large upright bundled wooden scaffolding frame in both hands above his shoulder toward upper RIGHT, leaning with effort, fully clothed, no building or other character. Same appearance consistent poses for game animation. No background, no floor, no labels, no cell borders, no overlapping cells.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-65142d65-23f3-4410-bf96-1a00fd95c0ca.png"
+  }
+]

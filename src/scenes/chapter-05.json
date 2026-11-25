@@ -1,0 +1,2231 @@
+{
+  "version": 1,
+  "chapter": 5,
+  "defaults": {
+    "desktop": {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "flipX": false,
+      "flipY": false
+    },
+    "deleted": false,
+    "locked": false
+  },
+  "frames": [
+    {
+      "paragraph": 0,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 1,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 2,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 3,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 4,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 5,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 6,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 7,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 8,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 9,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 10,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 11,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 12,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 13,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 14,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 15,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 16,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 17,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 18,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 19,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 20,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 21,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 22,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 23,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 24,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 25,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 26,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 27,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 28,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-contact-1": null,
+            "/ChapterFiveArt-c5-contact-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 29,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-contact-1": null,
+            "/ChapterFiveArt-c5-contact-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 30,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 31,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 32,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        },
+        "step-3": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 33,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 34,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-close-combat-1": null,
+            "/ChapterFiveArt-c5-close-combat-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        },
+        "step-3": {
+          "elements": {},
+          "clones": []
+        },
+        "step-4": {
+          "elements": {},
+          "clones": []
+        },
+        "step-5": {
+          "elements": {},
+          "clones": []
+        },
+        "step-6": {
+          "elements": {},
+          "clones": []
+        },
+        "step-7": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 35,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-result-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 36,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-result-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 37,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-result-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 38,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-baronet-1": null,
+            "/ChapterFiveArt-c5-baronet-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-crowd-1": null,
+            "/ChapterFiveArt-c5-crowd-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-mage-1": null,
+            "/ChapterFiveArt-c5-mage-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-result-1": null,
+            "/ChapterFiveArt-c5-strength-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 39,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 40,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c3-money-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterTwoMenus-item-icon-2": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-guards-1": null,
+            "/ChapterFiveArt-c5-guards-1/ChapterTwoArt-guard-poses-1": null,
+            "/ChapterFiveArt-c5-guards-1/ChapterTwoArt-guard-poses-1/ChapterTwoArt-guard-labels-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-sales-1": null,
+            "/ChapterFiveArt-c5-sales-1/ChapterTwoMenus-item-icon-2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 41,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 42,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 43,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 44,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c3-money-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 45,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 46,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 47,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c3-money-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-axe-card-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-axe-card-1/ChapterFive-c5-offer-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-axe-card-1/ChapterFive-c5-offer-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-axe-card-1/ChapterTwoMenus-item-icon-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 48,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 49,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 50,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 51,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 52,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 53,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 54,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 55,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 56,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c3-money-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-axe-card-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-axe-card-1/ChapterTwoMenus-item-icon-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterTwoMenus-item-icon-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 57,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 58,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-merchant-1": null,
+            "/ChapterFiveArt-c5-merchant-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-purchase-1": null,
+            "/ChapterFiveArt-c5-purchase-1/ChapterTwoMenus-item-icon-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 59,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c3-money-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterTwoMenus-item-icon-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c3-trade-1/ChapterFive-c5-offer-1/ChapterTwoMenus-item-icon-2": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-training-summary-1": null,
+            "/ChapterFiveArt-c5-training-summary-1/ChapterTwoMenus-item-icon-1": null,
+            "/ChapterFiveArt-c5-training-summary-1/ChapterTwoMenus-item-icon-2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        },
+        "step-3": {
+          "elements": {},
+          "clones": []
+        },
+        "step-4": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 60,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-grandmother-1": null,
+            "/ChapterFiveArt-c5-grandmother-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-kudjo-1": null,
+            "/ChapterFiveArt-c5-kudjo-1/ChapterThreeArt-town-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 61,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-grandmother-1": null,
+            "/ChapterFiveArt-c5-grandmother-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-kudjo-1": null,
+            "/ChapterFiveArt-c5-kudjo-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-roof-result-1": null,
+            "/ChapterFiveArt-c5-roof-result-1/ChapterThreeArt-c3-prop-1": null,
+            "/ChapterFiveArt-c5-roof-result-1/ChapterThreeArt-c3-prop-1/ChapterThreeArt-c3-prop-art-1": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 62,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-grandmother-1": null,
+            "/ChapterFiveArt-c5-grandmother-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-kudjo-1": null,
+            "/ChapterFiveArt-c5-kudjo-1/ChapterThreeArt-town-sprite-1": null,
+            "/ChapterFiveArt-c5-roof-result-1": null,
+            "/ChapterFiveArt-c5-roof-result-1/ChapterThreeArt-c3-prop-1": null,
+            "/ChapterFiveArt-c5-roof-result-1/ChapterThreeArt-c3-prop-1/ChapterThreeArt-c3-prop-art-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 63,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-guide-1": null,
+            "/ChapterFiveArt-c5-guide-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 64,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-guide-1": null,
+            "/ChapterFiveArt-c5-guide-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 65,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-guide-1": null,
+            "/ChapterFiveArt-c5-guide-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 66,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-guide-1": null,
+            "/ChapterFiveArt-c5-guide-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFourArt-four-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 67,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 68,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 69,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 70,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 71,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 72,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 73,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 74,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 75,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 76,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 77,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 78,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 79,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 80,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 81,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 82,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-2": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFive-chapter-menu-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-c4-class-1/ChapterFive-c4-lady-card-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFive-chapter-menu-1/ChapterFive-icon-button-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 83,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 84,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 85,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 86,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 87,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 88,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 89,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-c5-scratches-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-injury-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 90,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-injury-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 91,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-actions-1/ChapterFive-primary-button-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-found-mage-1": null,
+            "/ChapterFiveArt-c5-found-mage-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hands-1": null,
+            "/ChapterFiveArt-c5-hands-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hao-1": null,
+            "/ChapterFiveArt-c5-hao-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-injury-1": null,
+            "/ChapterFiveArt-c5-novice-1": null,
+            "/ChapterFiveArt-c5-novice-1/ChapterFiveArt-five-sprite-1": null,
+            "/ChapterFiveArt-c5-portal-1": null,
+            "/ChapterFiveArt-c5-priestesses-1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:0": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:1": null,
+            "/ChapterFiveArt-c5-priestesses-1/ChapterFiveArt-c5-priestess-1:2": null
+          },
+          "clones": []
+        },
+        "step-1": {
+          "elements": {},
+          "clones": []
+        },
+        "step-2": {
+          "elements": {},
+          "clones": []
+        },
+        "step-3": {
+          "elements": {},
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 92,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-found-mage-1": null,
+            "/ChapterFiveArt-c5-found-mage-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    },
+    {
+      "paragraph": 93,
+      "comment": "",
+      "variants": {
+        "start": {
+          "elements": {
+            "/ChapterFive-c3-actions-1": null,
+            "/ChapterFive-c3-location-1": null,
+            "/ChapterFiveArt-c5-found-mage-1": null,
+            "/ChapterFiveArt-c5-found-mage-1/ChapterFourArt-four-sprite-1": null,
+            "/ChapterFiveArt-c5-hero-1": null,
+            "/ChapterFiveArt-c5-hero-1/ChapterFiveArt-five-sprite-1": null
+          },
+          "clones": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "method": "built-in image_gen",
+  "prompt": "Use case: illustration-story. Asset type: single transparent paired character action sprite for a fantasy visual novel, chapter 5 paragraph 28, used once plus the following appointment paragraph 29. Images are style and character references only: reference 1 rightmost man is Mach (adult 30s, swept-back dark hair with grey strands, white rolled-sleeve shirt, brown vest and trousers, worn boots); reference 2 top-left woman is the same adult thin brown-haired mage (30s, worn pale calf-length dress, loose brown/purple robe, boots), now STANDING on the street, slightly tipsy and swaying. Generate ONE pair, no atlas, no surrounding crowd. Mach on LEFT bends slightly forward, reaches his RIGHT arm diagonally DOWN and very lightly pokes the woman's OUTER THIGH through the robe with his extended INDEX FINGER. The fingertip must visibly touch the CLOTH covering her thigh; all other fingers folded loosely. His other hand holds a plain wooden club pointed down. The adult mage stands on RIGHT, neutral startled expression, loose robe completely covering hips and legs, feet on same ground baseline as Mach. This is a mundane brief attention-getting tap before a magical class skill, no intimacy or undressing. Full figures, all hands, club and boots in canvas. Same detailed hand-painted JRPG storybook style, warm daylight, defined readable silhouettes. Side/three-quarter camera, man faces RIGHT, woman turned slightly LEFT. Medium body spacing so arm naturally touches thigh, both heights similar. Entire background is genuine alpha=0 transparency INCLUDING gaps between figures and arms, no brown matte, no halo, no floor, no shadows around figures, no checkerboard, no frame, no UI, no text. Suggested landscape canvas, pair fills height with comfortable margins.",
+  "references": [
+    "public/art/characters/tantrum/gate-reactions.webp",
+    "public/art/characters/tantrum/tavern-cast.webp"
+  ],
+  "source": "exec-4973d45c-8e89-46db-81fc-8a569e3ea5ac.png",
+  "target": "public/art/characters/mach/mage-contact.webp"
+}

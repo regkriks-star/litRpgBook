@@ -1,0 +1,20 @@
+[
+  {
+    "name": "temple-actions-clean",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/temple-actions-v2.png",
+    "prompt": "PRECISE BACKGROUND REMOVAL ONLY. This sprite sheet currently has unwanted brown/beige gradient rectangles and soft matte behind figures and hands. Remove EVERY background pixel, brown gradient, beige glow, flat color and floor shadow OUTSIDE the actual hero silhouettes and hand silhouettes. Output genuine uniform transparent alpha=0 everywhere outside isolated painted character/hand shapes. NO matte, NO rectangular background blocks. Preserve all SIX figures, their exact positions, sizes, colors, texture and canvas 1536x1024. Do not add anything or change poses. In bottom RIGHT cell keep ONLY the pale golden ethereal hands and forearms; all spaces BETWEEN and AROUND fingers and forearms completely transparent. Make those HANDS themselves translucent with gold fine outlines. The opaque brown rectangle behind them must disappear. Other five Mach sprites should have opaque actual body/clothing only, transparent outside. Bottom middle fallen hero must have no brown rectangle behind body. Do not remove brown clothing. No new halo or shadows.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-b304502c-5377-4d9c-ad49-f8f6897fec03.png"
+  },
+  {
+    "name": "temple-cast-clean",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/temple-cast-v2.png",
+    "prompt": "Background removal ONLY for game sprites. Remove every brown/beige background or gradient matte behind the six people. Uniform alpha=0 transparency outside each actual person silhouette, including between arms and bodies. Preserve all clothing characters faces poses positions scale and pixel canvas 1024x1536 exactly. Do not alter actual brown dresses/green shawls/white robes. No ground shadows, colored rectangles, halos or background remnants. Six isolated cutout people on genuine transparency; no new objects no layout changes.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-57d5b502-5da9-4755-b53a-5ff8c1f16acc.png"
+  },
+  {
+    "name": "close-actions-clean",
+    "path": "/home/makap/MyProjects/litRpg/docs/art/sources/chapter-05/close-actions.png",
+    "prompt": "Precise background removal ONLY: remove all brown/beige gradient matte, shadows and colored background outside the actual figures and sword/scaffolding in this game sprite atlas. Preserve exact FOUR vignettes, all poses, body shapes, colors and clothes; preserve pixel positions, canvas 1536x1024. Uniform alpha=0 transparency everywhere outside actual character/object silhouettes, including spaces between legs and arms. No matte rectangles, background, floor shadows, halos. Do not remove brown clothes or wood. Do not change characters, images or positions.",
+    "source": "/home/makap/.codex/generated_images/01a110bf-f208-7b61-806a-179966b2d72b/exec-be9e9408-7347-401d-9175-472508bfcf36.png"
+  }
+]

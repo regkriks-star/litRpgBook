@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "source": "source/mach-travel.png",
+  "runtime": "public/art/characters/mach/travel.webp",
+  "reference": "source/mach-leaves.png",
+  "prompt": "Use case: illustration-story. Asset type: supplementary 2x2 character animation sprite sheet, genuinely transparent alpha background, 1024x1024. Input reference: preserve the exact ADULT 28-year-old male identity, black-and-white striped hair, hand-painted ink/gouache style, bare chest, bare feet and FULLY OPAQUE knee-length green leaf skirt from the reference. Four completely separate full-body poses on an exact grid, with LARGE EMPTY transparent margins, no overlapping cells. Keep head size and adult body scale identical across all four poses. Top-left cell: running urgently to the RIGHT, left leg forward and bent, right leg back, arms pumping, anxious grimace. Top-right cell: same running motion other foot forward, right leg forward left back, arms swapped. Bottom-left: sitting on ground, knees bent, eating a RED APPLE held near mouth. Bottom-right: same sitting pose, peeling and eating a small ORANGE fruit. Feet contact baseline at y=470 in each cell; a seated figure must not be enlarged to fill the cell. All bodies within x=50..462 of each 512px cell and y=40..470. Skirt covers all pelvis, thighs and buttocks even in running and sitting, no intimate anatomy. No weapons, no scenery, no floor, no text, no grid lines, no labels, no checkerboard."
+}

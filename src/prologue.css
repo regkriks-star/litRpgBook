@@ -1,0 +1,15 @@
+.prologue-apartment .prologue-illustration img { object-position: center 82%; }
+/* Matches object-fit: cover and the 82% vertical position of the room plate. */
+.apartment-event { position: absolute; z-index: -1; width: max(100%, 150dvh); height: max(100%, 66.666667vw); left: 50%; top: calc((100dvh - max(100dvh, 66.666667vw)) * .82); translate: -50% 0; pointer-events: none; }
+.apartment-soul { position: absolute; left: 62%; top: 53.7%; translate: -50% -110%; width: clamp(30px, 3.4vw, 55px); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 40% 36%, #fff, #b6f3ff 30%, #499edb99 64%, transparent 74%); box-shadow: 0 0 24px #92eaff88; }
+.apartment-seal { position: absolute; left: 62%; top: 53.7%; translate: -50% -90%; width: clamp(90px, 14vw, 220px); aspect-ratio: 1; border: 2px solid #ffdc90; border-radius: 50%; background: radial-gradient(circle, #ffe1a522, transparent 70%); box-shadow: 0 0 24px #ffda83aa, inset 0 0 18px #ffda8366; opacity: 0; animation: apartment-cover 2.4s ease-out both; }
+.apartment-seal i { position: absolute; inset: 12%; border: 1px solid #ffe7a5; rotate: 45deg; }
+.apartment-seal i + i { inset: 25%; border-radius: 50%; rotate: 0deg; }
+.apartment-summoning .apartment-soul { opacity: 0; animation: apartment-soul-vanish 2.4s ease-out both; }
+.apartment-flash { position: absolute; left: 62%; top: 53.7%; translate: -50% -70%; width: 28%; aspect-ratio: 1; opacity: 0; border-radius: 50%; background: radial-gradient(circle, #fffbe9, #ffd99088 35%, transparent 70%); animation: apartment-flash 2.4s ease-out both; }
+@keyframes apartment-cover { 0% { opacity: 0; transform: translateY(-70px) rotate(-35deg) scale(.55); } 38%, 58% { opacity: 1; transform: none; } 72%, 100% { opacity: 0; transform: scale(1.2); } }
+@keyframes apartment-soul-vanish { 0%, 55% { opacity: 1; } 70%, 100% { opacity: 0; } }
+@keyframes apartment-flash { 0%, 52% { opacity: 0; scale: .4; } 63% { opacity: .95; scale: 1; } 80%, 100% { opacity: 0; scale: 1.4; } }
+@media (max-height: 600px) and (orientation: landscape) {
+  .prologue-apartment .story-window.prologue-reading { height: 40%; min-height: 132px; bottom: max(12px, env(safe-area-inset-bottom)); padding-bottom: 8px; }
+}

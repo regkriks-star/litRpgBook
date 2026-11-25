@@ -1,0 +1,232 @@
+import { expect, test, type FrameLocator, type Page } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import { CHAPTER_TWO_SAVE } from '../src/chapter-two-game';
+import { chapterReplay } from '../src/scene-replay';
+
+async function openEditor(page: Page) {
+  await page.goto('/?scene-editor=1');
+  await expect(page.getByRole('heading', { name: 'Редактор сцен', exact: true })).toBeVisible();
+  await expect(page.locator('.editor-object-list button')).not.toHaveCount(0);
+}
+function scene(page: Page): FrameLocator { return page.frameLocator('iframe[title="Предпросмотр сцены"]'); }
+async function selectGoddess(page: Page) {
+  const sprite = scene(page).locator('.goddess-sprite:not([data-scene-deleted])');
+  await sprite.waitFor();
+  // The editor must allow a coordinate click on decorative sprites too.
+  const box = (await sprite.boundingBox())!;
+  await page.mouse.click(box.x + box.width / 2, box.y + 30);
+  await expect(page.getByLabel('Масштаб объекта')).toBeVisible();
+  return sprite;
+}
+
+test('editing, copies, deletion, undo, ghost and one-frame magnet preserve the full chapter and game saves', async ({ page }) => {
+  test.setTimeout(120000);
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.route('**/__scene-editor/*.json', route => route.fulfill({ status: 200, contentType: 'application/json', body: '{"saved":true}' }));
+  await page.addInitScript(() => {
+    localStorage.setItem('lazy-courage:chapter-one-page', '17');
+    localStorage.setItem('lazy-courage:chapter-two:v1', 'game-progress-two');
+    localStorage.setItem('lazy-courage:chapter-three:v1', 'game-progress-three');
+    localStorage.setItem('lazy-courage:chapter-four:v1', 'game-progress-four');
+    localStorage.setItem('lazy-courage:chapter-five:v1', 'game-progress-five');
+  });
+  await openEditor(page);
+  const progress = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage).filter(([key]) => !key.includes('scene-layout'))));
+  expect(progress['lazy-courage:chapter-one-page']).toBe('17');
+  await selectGoddess(page);
+  await page.getByLabel('Масштаб объекта').fill('1.3');
+  await page.getByLabel('Смещение X', { exact: true }).fill('7');
+  await page.getByLabel('Смещение Y', { exact: true }).fill('-2');
+  await page.getByRole('button', { name: 'Отразить горизонтально', exact: true }).click();
+  await page.getByLabel('Комментарий к кадру').fill('Опора трона должна совпадать со следующим кадром.');
+  const first = await scene(page).locator('.goddess-sprite').boundingBox();
+  await page.getByRole('button', { name: 'Копировать', exact: true }).click();
+  await page.getByRole('button', { name: 'Вставить', exact: true }).click();
+  await expect(scene(page).locator('.goddess-sprite')).toHaveCount(2);
+  await page.getByRole('button', { name: 'Удалить', exact: true }).click();
+  await expect(scene(page).locator('.goddess-sprite[data-scene-deleted]')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Отменить изменение' }).click();
+  await expect(scene(page).locator('.goddess-sprite[data-scene-deleted]')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Удалить', exact: true }).click();
+  await page.getByRole('button', { name: 'Следующий кадр', exact: true }).click();
+  await expect(page.getByLabel('Номер кадра')).toHaveValue('2');
+  await page.getByRole('button', { name: 'Предыдущие спрайты' }).click();
+  await expect(page.locator('iframe[title="Предыдущий кадр"]')).toHaveCSS('opacity', '0.28');
+  await selectGoddess(page);
+  await expect(page.getByRole('button', { name: 'Примагнитить', exact: true })).toBeEnabled();
+  await page.getByRole('button', { name: 'Примагнитить', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Отмагнитить', exact: true })).toBeVisible();
+  await expect(page.getByLabel('Масштаб объекта')).toHaveValue('1.3');
+  const second = (await scene(page).locator('.goddess-sprite').boundingBox())!;
+  expect(Math.abs(second.x - first!.x)).toBeLessThan(2);
+  expect(Math.abs(second.y - first!.y)).toBeLessThan(2);
+  await page.getByRole('button', { name: 'Отмагнитить', exact: true }).click();
+  await expect(page.getByLabel('Масштаб объекта')).toHaveValue('1.3');
+  await page.getByRole('button', { name: 'Окно текста', exact: true }).click();
+  await expect(scene(page).locator('.story-window')).toBeHidden();
+  await page.getByRole('button', { name: 'Предыдущий кадр', exact: true }).click();
+  await selectGoddess(page);
+  await page.getByLabel('Масштаб объекта').fill('1.6');
+  await page.getByRole('button', { name: 'Следующий кадр', exact: true }).click();
+  await selectGoddess(page);
+  await expect(page.getByLabel('Масштаб объекта')).toHaveValue('1.3');
+  const downloaded = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Сохранить главу', exact: true }).click();
+  const download = await downloaded;
+  expect(download.suggestedFilename()).toBe('chapter-01.json');
+  const doc = JSON.parse(readFileSync((await download.path())!, 'utf8'));
+  expect(doc.frames).toHaveLength(113);
+  expect(doc.frames[0].comment).toContain('Опора трона');
+  expect(doc.frames[0].variants.start.clones).toHaveLength(1);
+  expect(await page.evaluate(() => Object.fromEntries(Object.entries(localStorage).filter(([key]) => !key.includes('scene-layout'))))).toEqual(progress);
+  await page.goto('/');
+  await page.evaluate(() => localStorage.setItem('lazy-courage:view', 'chapter-one'));
+  await page.reload();
+  await expect(page.locator('.story-window')).toBeVisible();
+  await expect(page.locator('body')).not.toContainText('Опора трона должна совпадать');
+  expect(errors).toEqual([]);
+});
+
+test('dragging and a saved action-state placement work in the editor and the actual game', async ({ page }) => {
+  test.setTimeout(120000);
+  await page.route('**/__scene-editor/*.json', route => route.fulfill({ status: 200, contentType: 'application/json', body: '{"saved":true}' }));
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Редактор сцен', exact: true }).click();
+  await expect(page.locator('.editor-object-list button')).not.toHaveCount(0);
+  await scene(page).getByRole('button', { name: 'Оглавление', exact: true }).focus();
+  await page.keyboard.press('Tab');
+  await expect(scene(page).getByRole('button', { name: 'Читать главу 1 сначала', exact: true })).toBeFocused();
+  const sprite = await selectGoddess(page);
+  const before = (await sprite.boundingBox())!;
+  await page.mouse.move(before.x + before.width / 2, before.y + 30);
+  await page.mouse.down();
+  await page.mouse.move(before.x + before.width / 2 + 35, before.y + 45, { steps: 5 });
+  await page.mouse.up();
+  await expect.poll(async () => Math.round(((await sprite.boundingBox())!).x - before.x)).toBe(35);
+  await page.getByRole('button', { name: 'Отменить изменение' }).click();
+  await expect.poll(async () => Math.round(((await sprite.boundingBox())!).x - before.x)).toBe(0);
+  await page.getByRole('button', { name: 'Отразить вертикально', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Отразить вертикально', exact: true })).toHaveAttribute('aria-pressed', 'true');
+
+  await page.getByLabel('Глава для редактирования').selectOption('2');
+  await page.getByLabel('Номер кадра').fill('10');
+  await page.getByLabel('Состояние кадра').selectOption('step-1');
+  const hero = scene(page).locator('.chapter-hero-position');
+  await hero.waitFor();
+  const id = (await hero.getAttribute('data-scene-object'))!;
+  await page.locator('.editor-object-list button[data-scene-object-id="' + id + '"]').click();
+  await page.getByLabel('Смещение X', { exact: true }).fill('8');
+  await page.getByRole('button', { name: 'Отразить горизонтально', exact: true }).click();
+  await page.getByLabel('Состояние кадра').selectOption('start');
+  await page.getByRole('button', { name: 'Проверить действия', exact: true }).click();
+  await scene(page).getByRole('button', { name: 'Собрать листья цедулиса', exact: true }).click();
+  await expect(page.getByLabel('Состояние кадра')).toHaveValue('step-1');
+  await expect.poll(() => hero.evaluate(node => Number(getComputedStyle(node).transform.split(',')[4]))).toBeCloseTo(115.2, 0);
+  await page.getByLabel('Размер предпросмотра').selectOption('4');
+  await expect(scene(page).getByRole('button', { name: 'Собрать листья цедулиса', exact: true })).toHaveCount(0);
+  await expect(scene(page).locator('.scene-instruction')).toContainText('Листья собраны');
+  await page.getByLabel('Размер предпросмотра').selectOption('0');
+  await page.getByRole('button', { name: 'Редактировать', exact: true }).click();
+  await page.locator('.editor-object-list button[data-scene-object-id="' + id + '"]').click();
+  await expect(page.getByLabel('Смещение X', { exact: true })).toHaveValue('8');
+  const downloaded = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Сохранить главу', exact: true }).click();
+  await downloaded;
+  await page.evaluate(({ key, save }) => {
+    localStorage.setItem('lazy-courage:view', 'chapter-two');
+    localStorage.setItem(key, JSON.stringify(save));
+  }, { key: CHAPTER_TWO_SAVE, save: chapterReplay(2)[9][0].two!.save });
+  await page.goto('/');
+  const gameHero = page.locator('.chapter-hero-position');
+  await gameHero.waitFor();
+  expect(await gameHero.getAttribute('data-scene-object')).toBe(id);
+  expect(await gameHero.evaluate(node => getComputedStyle(node).transform)).toBe('none');
+  await page.getByRole('button', { name: 'Собрать листья цедулиса', exact: true }).click();
+  await expect.poll(() => gameHero.evaluate(node => Number(getComputedStyle(node).transform.split(',')[4]))).toBeCloseTo(115.2, 0);
+  await expect.poll(() => gameHero.evaluate(node => Number(getComputedStyle(node).transform.split('(')[1].split(',')[0]))).toBe(-1);
+  await page.reload();
+  await expect.poll(() => gameHero.evaluate(node => Number(getComputedStyle(node).transform.split(',')[4]))).toBeCloseTo(115.2, 0);
+});
+
+test('mobile preview uses a real viewport and separate overrides; JSON import validates chapter and restores comments', async ({ page }) => {
+  await openEditor(page);
+  await selectGoddess(page);
+  await page.getByLabel('Смещение X', { exact: true }).fill('5');
+  await page.getByLabel('Размер предпросмотра').selectOption('4');
+  await selectGoddess(page);
+  const actual = await scene(page).locator('html').evaluate(() => ({ width: innerWidth, height: innerHeight }));
+  expect(actual).toEqual({ width: 568, height: 320 });
+  await expect(page.getByLabel('Смещение X', { exact: true })).toHaveValue('5');
+  await page.getByLabel('Смещение X', { exact: true }).fill('2');
+  await page.getByLabel('Размер предпросмотра').selectOption('0');
+  await selectGoddess(page);
+  await expect(page.getByLabel('Смещение X', { exact: true })).toHaveValue('5');
+  const data = JSON.parse(readFileSync('src/scenes/chapter-01.json', 'utf8'));
+  data.frames[0].comment = 'Комментарий из JSON';
+  await page.locator('input[type=file]').setInputFiles({ name: 'chapter-01.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(data)) });
+  await expect(page.getByLabel('Комментарий к кадру')).toHaveValue('Комментарий из JSON');
+  data.chapter = 2;
+  await page.locator('input[type=file]').setInputFiles({ name: 'wrong.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(data)) });
+  await expect(page.locator('.scene-editor-status')).toContainText('Не удалось открыть JSON');
+  await expect(page.getByLabel('Комментарий к кадру')).toHaveValue('Комментарий из JSON');
+});
+
+test('all five chapters expose action states; cloned action remains functional after original deletion', async ({ page }) => {
+  test.setTimeout(120000);
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await openEditor(page);
+  for (const [chapter, frame, minimum] of [[2, 10, 3], [3, 26, 3], [4, 26, 3], [5, 35, 8]]) {
+    await page.getByLabel('Глава для редактирования').selectOption(String(chapter));
+    await page.getByLabel('Номер кадра').fill(String(frame));
+    await expect(page.getByLabel('Состояние кадра').locator('option')).toHaveCount(minimum);
+    await expect(page.locator('.editor-object-list button')).not.toHaveCount(0);
+  }
+  await page.getByLabel('Глава для редактирования').selectOption('2');
+  await page.getByLabel('Номер кадра').fill('10');
+  const bush = scene(page).getByRole('button', { name: 'Собрать листья цедулиса', exact: true });
+  await bush.waitFor();
+  const box = (await bush.boundingBox())!;
+  await page.mouse.click(box.x + 10, box.y + box.height - 10);
+  await page.getByRole('button', { name: 'Копировать', exact: true }).click();
+  await page.getByRole('button', { name: 'Вставить', exact: true }).click();
+  await expect(bush).toHaveCount(2);
+  await page.getByRole('button', { name: 'Удалить', exact: true }).click();
+  await page.getByRole('button', { name: 'Отменить изменение' }).click();
+  const originalId = await bush.first().getAttribute('data-scene-object');
+  await page.locator('.editor-object-list button').filter({ hasText: 'Собрать листья цедулиса' }).first().click();
+  await expect(bush.first()).toHaveAttribute('data-scene-selected', 'true');
+  expect(await bush.first().getAttribute('data-scene-object')).toBe(originalId);
+  await page.getByRole('button', { name: 'Удалить', exact: true }).click();
+  await page.getByRole('button', { name: 'Проверить действия', exact: true }).click();
+  await scene(page).getByRole('button', { name: 'Собрать листья цедулиса', exact: true }).filter({ visible: true }).click();
+  await expect(scene(page).locator('.scene-instruction')).toContainText('Листья собраны');
+  expect(errors).toEqual([]);
+});
+
+test('magnet follows a visible copy and accounts for reflection and scale of its parent', async ({ page }) => {
+  await openEditor(page);
+  const root = '/ChapterOne-goddess-position-1';
+  const child = root + '/ChapterOne-goddess-sprite-1';
+  const choose = (id: string) => page.locator('.editor-object-list button[data-scene-object-id="' + id + '"]').click();
+  await choose(root);
+  await page.getByLabel('Масштаб объекта').fill('1.2');
+  await page.getByRole('button', { name: 'Отразить горизонтально', exact: true }).click();
+  await page.getByRole('button', { name: 'Копировать', exact: true }).click();
+  await page.getByRole('button', { name: 'Вставить', exact: true }).click();
+  await expect(scene(page).locator('.goddess-sprite')).toHaveCount(2);
+  const target = (await scene(page).locator('.goddess-sprite').last().boundingBox())!;
+  await choose(root);
+  await page.getByRole('button', { name: 'Удалить', exact: true }).click();
+  await page.getByRole('button', { name: 'Следующий кадр', exact: true }).click();
+  await choose(child);
+  await expect(page.getByRole('button', { name: 'Примагнитить', exact: true })).toBeEnabled();
+  await page.getByRole('button', { name: 'Примагнитить', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Отмагнитить', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Отразить горизонтально', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.getByLabel('Масштаб объекта')).toHaveValue('1.2');
+  const actual = (await scene(page).locator('.goddess-sprite').boundingBox())!;
+  expect(Math.abs(actual.x - target.x)).toBeLessThan(2);
+  expect(Math.abs(actual.y - target.y)).toBeLessThan(2);
+});
