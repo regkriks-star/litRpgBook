@@ -87,7 +87,7 @@ src/scenes/chapter-0N.json  ←  SceneEditor (dev: файл + localStorage; prod
 * [scene-documents.ts](../../src/scene-documents.ts) — чтение/запись `lazy-courage:scene-layout:N:v1`.
 * [SceneObject.tsx](../../src/SceneObject.tsx) — привязка React-элементов к сцене, замеры, drag.
 * [SceneAction.tsx](../../src/SceneAction.tsx) — прозрачная фокусируемая кнопка поверх нарисованного объекта: предмет сам является действием, без текстовой плашки.
-* [ReaderSettings.tsx](../../src/ReaderSettings.tsx) и [reader-settings.css](../../src/reader-settings.css) — общие настройки чтения для всех книжных сцен: шрифт, размер окна и прозрачность фона; переменные на `<html>` и ключ `lazy-courage:reader-settings:v1`.
+* [ReaderSettings.tsx](../../src/ReaderSettings.tsx) и [reader-settings.css](../../src/reader-settings.css) — общие настройки чтения для всех книжных сцен: шрифт, высота окна и прозрачность фона; переменные на `<html>` и ключ `lazy-courage:reader-settings:v1`.
 * [SceneEditor.tsx](../../src/SceneEditor.tsx) — редактор; сохранение в dev идёт через POST `/__scene-editor/chapter-0N.json`.
 * [scene-replay.ts](../../src/scene-replay.ts) — перебор состояний главы для кадров и вариантов.
 

@@ -1,5 +1,5 @@
 /* Shared reader settings. The values live on <html> (see ReaderSettings.tsx):
-   --reader-font-scale, --reader-window-scale, --reader-window-alpha. */
+   --reader-font-scale, --reader-window-scale (height only), --reader-window-alpha. */
 :root { --reader-font-scale: 1; --reader-window-scale: 1; --reader-window-alpha: 1; }
 
 /* Base geometry of every book window. Surfaces only override the variables. */
@@ -7,11 +7,11 @@
 .reader-surface .story-window.prologue-reading { --reader-window-height: 38%; --reader-window-min: 240px; }
 .reader-surface .story-window.chapter-two-reading { --reader-window-width: 92%; --reader-window-height: var(--reading-height); --reader-window-min: 0px; }
 
-/* One rule scales every window. The id beats chapter-specific left/right/height. */
+/* One rule scales every window by height; the width stays at the surface base. */
 #root .reader-surface .story-window {
   left: 50%;
   right: auto;
-  width: min(calc(var(--reader-window-width) * var(--reader-window-scale)), 96%);
+  width: min(var(--reader-window-width), 96%);
   height: calc(var(--reader-window-height) * var(--reader-window-scale));
   min-height: calc(var(--reader-window-min) * var(--reader-window-scale));
   translate: -50% 0;

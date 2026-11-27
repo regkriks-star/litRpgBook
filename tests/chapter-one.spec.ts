@@ -255,7 +255,7 @@ test('small landscape keeps touch controls, appearance text and direct card taps
   await expect(page.getByRole('dialog')).toBeVisible();
 });
 
-test('reader settings change text size, window size and transparency and persist', async ({ page }) => {
+test('reader settings change text size, window height and transparency and persist', async ({ page }) => {
   await resume(page, 0);
   const settings = page.getByRole('button', { name: 'Настройки чтения', exact: true });
   const contents = await page.getByRole('button', { name: 'Оглавление', exact: true }).boundingBox();
@@ -283,17 +283,18 @@ test('reader settings change text size, window size and transparency and persist
   });
   const before = await metrics();
   await setRange('Размер шрифта', 130);
-  await setRange('Размер окна с текстом', 110);
+  await setRange('Высота окна с текстом', 110);
   await setRange('Прозрачность окна с текстом', 50);
   const changed = await metrics();
   expect(parseFloat(changed.font)).toBeCloseTo(33.8, 1);
-  expect(changed.width).toBeGreaterThan(before.width);
+  expect(changed.width).toBe(before.width);
   expect(changed.height).toBeGreaterThan(before.height);
   expect(changed.alpha).toBe('0.5');
   await page.reload();
   const restored = await metrics();
   expect(parseFloat(restored.font)).toBeCloseTo(33.8, 1);
-  expect(restored.width).toBe(changed.width);
+  expect(restored.width).toBe(before.width);
+  expect(restored.height).toBe(changed.height);
   await page.getByRole('button', { name: 'Настройки чтения', exact: true }).click();
   await page.getByRole('button', { name: 'Сбросить настройки', exact: true }).click();
   const reset = await metrics();
@@ -313,7 +314,7 @@ test('reader settings stay usable and inside a 568 × 320 screen', async ({ page
   expect(box.y).toBeGreaterThanOrEqual(0);
   expect(box.x + box.width).toBeLessThanOrEqual(568);
   expect(box.y + box.height).toBeLessThanOrEqual(320);
-  for (const name of ['Размер шрифта', 'Размер окна с текстом', 'Прозрачность окна с текстом']) {
+  for (const name of ['Размер шрифта', 'Высота окна с текстом', 'Прозрачность окна с текстом']) {
     const slider = (await page.getByRole('slider', { name, exact: true }).boundingBox())!;
     expect(slider.height).toBeGreaterThanOrEqual(44);
     expect(slider.width).toBeGreaterThanOrEqual(44);
@@ -325,7 +326,7 @@ test('reader settings stay usable and inside a 568 × 320 screen', async ({ page
     element.dispatchEvent(new Event('change', { bubbles: true }));
   }, value);
   await setRange('Размер шрифта', 140);
-  await setRange('Размер окна с текстом', 120);
+  await setRange('Высота окна с текстом', 120);
   await setRange('Прозрачность окна с текстом', 35);
   const bounds = await page.evaluate(() => {
     const window = document.querySelector('.story-window')!.getBoundingClientRect();

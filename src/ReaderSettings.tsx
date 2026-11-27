@@ -76,7 +76,7 @@ export default function ReaderSettings() {
     {open && <aside ref={panel} id="reader-settings" className="reader-settings" role="dialog" aria-label="Настройки чтения" tabIndex={-1}>
       <header><h2>Настройки чтения</h2><button className="icon-button" aria-label="Закрыть настройки" title="Закрыть настройки" onClick={close}><X size={18} /></button></header>
       <label className="reader-setting"><span>Размер шрифта<output>{settings.font}%</output></span><input type="range" min="80" max="140" step="5" value={settings.font} aria-label="Размер шрифта" onChange={event => change('font', Number(event.target.value))} /></label>
-      <label className="reader-setting"><span>Размер окна<output>{settings.window}%</output></span><input type="range" min="80" max="120" step="5" value={settings.window} aria-label="Размер окна с текстом" onChange={event => change('window', Number(event.target.value))} /></label>
+      <label className="reader-setting"><span>Высота окна<output>{settings.window}%</output></span><input type="range" min="80" max="120" step="5" value={settings.window} aria-label="Высота окна с текстом" onChange={event => change('window', Number(event.target.value))} /></label>
       <label className="reader-setting"><span>Прозрачность окна<output>{settings.transparency}%</output></span><input type="range" min="0" max="65" step="5" value={settings.transparency} aria-label="Прозрачность окна с текстом" onChange={event => change('transparency', Number(event.target.value))} /></label>
       <button className="text-button" onClick={reset}>Сбросить настройки</button>
     </aside>}

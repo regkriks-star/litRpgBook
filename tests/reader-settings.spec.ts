@@ -56,7 +56,7 @@ test('reading settings button and panel fit a 568 × 320 chapter header', async 
   expect(box.y).toBeGreaterThanOrEqual(0);
   expect(box.x + box.width).toBeLessThanOrEqual(568);
   expect(box.y + box.height).toBeLessThanOrEqual(320);
-  for (const name of ['Размер шрифта', 'Размер окна с текстом', 'Прозрачность окна с текстом']) {
+  for (const name of ['Размер шрифта', 'Высота окна с текстом', 'Прозрачность окна с текстом']) {
     const slider = (await page.getByRole('slider', { name, exact: true }).boundingBox())!;
     expect(slider.height).toBeGreaterThanOrEqual(44);
   }
