@@ -86,10 +86,14 @@ src/scenes/chapter-0N.json  ←  SceneEditor (dev: файл + localStorage; prod
 * [scene-layout.ts](../../src/scene-layout.ts) — схема JSON, длины глав, `parseSceneChapter`, трансформации.
 * [scene-documents.ts](../../src/scene-documents.ts) — чтение/запись `lazy-courage:scene-layout:N:v1`.
 * [SceneObject.tsx](../../src/SceneObject.tsx) — привязка React-элементов к сцене, замеры, drag.
+* [SceneAction.tsx](../../src/SceneAction.tsx) — прозрачная фокусируемая кнопка поверх нарисованного объекта: предмет сам является действием, без текстовой плашки.
+* [ReaderSettings.tsx](../../src/ReaderSettings.tsx) и [reader-settings.css](../../src/reader-settings.css) — общие настройки чтения для всех книжных сцен: шрифт, размер окна и прозрачность фона; переменные на `<html>` и ключ `lazy-courage:reader-settings:v1`.
 * [SceneEditor.tsx](../../src/SceneEditor.tsx) — редактор; сохранение в dev идёт через POST `/__scene-editor/chapter-0N.json`.
 * [scene-replay.ts](../../src/scene-replay.ts) — перебор состояний главы для кадров и вариантов.
 
 Координаты — проценты от viewport; мобильные поправки хранятся отдельно в `mobile`. Не редактируй JSON вручную в обход `parseSceneChapter`: он проверяет все кадры, варианты, копии и пределы.
+
+Базовое размещение объектов (размер, центр, адаптивные правила) задаётся CSS главы, а JSON хранит только отличия от этой композиции. Поэтому общая правка, действующая на всех страницах, делается в CSS; трансформация в JSON нужна только для отдельного кадра или варианта. Пример — [Датарис и божественная печать](../../src/chapter-one.css): общие переменные `.audience-scene` центрируют трон и печать на всех кадрах.
 
 ## Текст
 

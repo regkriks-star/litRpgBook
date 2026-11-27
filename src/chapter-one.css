@@ -96,8 +96,11 @@
 @keyframes soul-enter { from { opacity: 1; translate: 0 0; } to { opacity: 0; translate: 4vw -8vh; scale: .15; } }
 @keyframes rebirth-flash { 0% { background: #fff7d6; } 40% { background: #000; } 100% { background: transparent; } }
 @keyframes world-fall { from { opacity: 1; transform: none; } to { opacity: .65; transform: translateY(6vh) scale(.4); } }
-.audience-scene { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-.goddess-position { position: absolute; top: 22%; left: 55%; width: min(45vh, 42vw); aspect-ratio: 1; }
+/* The throne group and the seal share one center, so every pose sits inside the
+   ritual circle. The seal is offset by 5% of the group width: the registered
+   throne anchor is at 55% of the group, not at its geometric middle. */
+.audience-scene { --goddess-size: min(54vh, 42vw); --goddess-x: 68%; --goddess-y: 37%; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.goddess-position { position: absolute; top: var(--goddess-y); left: var(--goddess-x); width: var(--goddess-size); aspect-ratio: 1; translate: -50% -50%; }
 /* 32 source pixels of padding on all sides, preserving the original scene scale. */
 .goddess-sprite { position: absolute; top: -6.25%; left: -6.25%; width: 112.5%; height: 112.5%; overflow: hidden; filter: drop-shadow(0 8px 22px #97c5c82b); transition: filter .35s; }
 .goddess-poses { display: flex; width: 100%; height: 100%; transform: translateX(calc(var(--pose) * -100%)); }
@@ -112,7 +115,7 @@
 .soul i:nth-child(2) { transform: rotateY(60deg) rotateZ(-30deg); }
 .soul i:nth-child(3) { inset: -40%; border-style: dotted; opacity: .55; }
 .speaking-soul .soul { animation: soul-speech 1.8s ease-in-out 2; }
-.divine-seal { position: absolute; top: 8%; left: 46%; width: min(48vh, 40vw); aspect-ratio: 1; border: 1px solid #e1c77a55; border-radius: 50%; opacity: .55; }
+.divine-seal { position: absolute; top: var(--goddess-y); left: calc(var(--goddess-x) + var(--goddess-size) * .05); width: calc(var(--goddess-size) * 1.16); aspect-ratio: 1; translate: -50% -50%; border: 1px solid #e1c77a55; border-radius: 50%; opacity: .64; box-shadow: inset 0 0 90px #e1c77a10; }
 .divine-seal i { position: absolute; inset: 8%; border: 1px solid #e1c77a66; transform: rotate(45deg); }
 .divine-seal i:nth-child(2) { transform: rotate(15deg); }
 .divine-seal i:nth-child(3) { inset: 15%; border-radius: 50%; }
@@ -171,8 +174,7 @@
   .creation-properties input { font-size: 17px; padding: 3px 6px; margin-bottom: 3px; }
   .reborn-position { left: 24%; }
   .reborn-position.approaching { left: 45%; }
-  .goddess-position { top: 29%; left: 61%; width: 36vh; }
-  .divine-seal { top: 12%; left: 50%; width: 40vh; }
+  .audience-scene { --goddess-size: min(44vh, 48vw); --goddess-y: 44%; }
   .soul-position { top: 28%; width: 42px; left: 26%; }
   .chapter-one .story-window.prologue-reading { bottom: max(12px, env(safe-area-inset-bottom)); height: 45%; min-height: 144px; padding: 22px 18px 8px; }
   .chapter-one .reader-controls { padding-top: 3px; gap: 6px; }

@@ -249,3 +249,91 @@ test('small landscape keeps touch controls, appearance text and direct card taps
   await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
   await expect(page.getByRole('dialog')).toBeVisible();
 });
+
+test('reader settings change text size, window size and transparency and persist', async ({ page }) => {
+  await resume(page, 0);
+  const settings = page.getByRole('button', { name: 'Настройки чтения', exact: true });
+  const contents = await page.getByRole('button', { name: 'Оглавление', exact: true }).boundingBox();
+  const button = await settings.boundingBox();
+  expect(button!.width).toBe(contents!.width);
+  expect(button!.height).toBe(contents!.height);
+  await settings.click();
+  const panel = page.getByRole('dialog', { name: 'Настройки чтения', exact: true });
+  await expect(panel).toBeVisible();
+  await expect(panel.getByRole('slider')).toHaveCount(3);
+  const setRange = (name: string, value: number) => page.getByRole('slider', { name, exact: true }).evaluate((element, next) => {
+    const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!;
+    setter.call(element, String(next));
+    element.dispatchEvent(new Event('input', { bubbles: true }));
+    element.dispatchEvent(new Event('change', { bubbles: true }));
+  }, value);
+  const metrics = () => page.evaluate(() => {
+    const window = document.querySelector('.story-window')!.getBoundingClientRect();
+    const main = document.querySelector('main.chapter-one')!;
+    return {
+      width: Math.round(window.width), height: Math.round(window.height),
+      font: getComputedStyle(document.querySelector('.chapter-one-text')!).fontSize,
+      alpha: getComputedStyle(main).getPropertyValue('--reader-window-alpha').trim(),
+    };
+  });
+  const before = await metrics();
+  await setRange('Размер шрифта', 130);
+  await setRange('Размер окна с текстом', 110);
+  await setRange('Прозрачность окна с текстом', 50);
+  const changed = await metrics();
+  expect(parseFloat(changed.font)).toBeCloseTo(33.8, 1);
+  expect(changed.width).toBeGreaterThan(before.width);
+  expect(changed.height).toBeGreaterThan(before.height);
+  expect(changed.alpha).toBe('0.5');
+  await page.reload();
+  const restored = await metrics();
+  expect(parseFloat(restored.font)).toBeCloseTo(33.8, 1);
+  expect(restored.width).toBe(changed.width);
+  await page.getByRole('button', { name: 'Настройки чтения', exact: true }).click();
+  await page.getByRole('button', { name: 'Сбросить настройки', exact: true }).click();
+  const reset = await metrics();
+  expect(reset.font).toBe('26px');
+  expect(reset.width).toBe(before.width);
+  await page.keyboard.press('Escape');
+  await expect(panel).toHaveCount(0);
+});
+
+test('reader settings stay usable and inside a 568 × 320 screen', async ({ page }) => {
+  await page.setViewportSize({ width: 568, height: 320 });
+  await resume(page, 0);
+  await page.getByRole('button', { name: 'Настройки чтения', exact: true }).click();
+  const panel = page.getByRole('dialog', { name: 'Настройки чтения', exact: true });
+  const box = (await panel.boundingBox())!;
+  expect(box.x).toBeGreaterThanOrEqual(0);
+  expect(box.y).toBeGreaterThanOrEqual(0);
+  expect(box.x + box.width).toBeLessThanOrEqual(568);
+  expect(box.y + box.height).toBeLessThanOrEqual(320);
+  for (const name of ['Размер шрифта', 'Размер окна с текстом', 'Прозрачность окна с текстом']) {
+    const slider = (await page.getByRole('slider', { name, exact: true }).boundingBox())!;
+    expect(slider.height).toBeGreaterThanOrEqual(44);
+    expect(slider.width).toBeGreaterThanOrEqual(44);
+  }
+  const setRange = (name: string, value: number) => page.getByRole('slider', { name, exact: true }).evaluate((element, next) => {
+    const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')!.set!;
+    setter.call(element, String(next));
+    element.dispatchEvent(new Event('input', { bubbles: true }));
+    element.dispatchEvent(new Event('change', { bubbles: true }));
+  }, value);
+  await setRange('Размер шрифта', 140);
+  await setRange('Размер окна с текстом', 120);
+  await setRange('Прозрачность окна с текстом', 35);
+  const bounds = await page.evaluate(() => {
+    const window = document.querySelector('.story-window')!.getBoundingClientRect();
+    return { left: window.left, right: window.right, top: window.top, bottom: window.bottom, width: innerWidth, height: innerHeight };
+  });
+  expect(bounds.left).toBeGreaterThanOrEqual(0);
+  expect(bounds.right).toBeLessThanOrEqual(bounds.width + 1);
+  expect(bounds.top).toBeGreaterThanOrEqual(0);
+  expect(bounds.bottom).toBeLessThanOrEqual(bounds.height + 1);
+  const reset = page.getByRole('button', { name: 'Сбросить настройки', exact: true });
+  await reset.scrollIntoViewIfNeeded();
+  await expect(reset).toBeInViewport();
+  await page.keyboard.press('Escape');
+  await expect(panel).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Далее', exact: true })).toBeVisible();
+});

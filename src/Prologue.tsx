@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, RotateCcw } from 'lucide-react';
 import paragraphs from './prologue.json';
 import { assetUrl } from './assets';
+import ReaderSettings from './ReaderSettings';
 import './prologue.css';
 
 const saveKey = 'lazy-courage:prologue-page';
@@ -65,10 +66,11 @@ export default function Prologue({ onContents, onChapterOne }: { onContents: () 
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
-  return <main className={`stage prologue-reader ${current.image === 'prologueApartment' ? 'prologue-apartment' : ''}`} aria-label="Пролог">
+  return <main className={`stage prologue-reader reader-surface ${current.image === 'prologueApartment' ? 'prologue-apartment' : ''}`} aria-label="Пролог">
     <header className="game-header reader-header"><div className="reader-toolbar" role="navigation" aria-label="Меню игры">
       <button className="icon-button" aria-label="Оглавление" title="Оглавление" onClick={onContents}><BookOpen size={18} /></button>
       <button className="icon-button" aria-label="Читать пролог сначала" title="Читать сначала" onClick={() => setPage(0)}><RotateCcw size={18} /></button>
+      <ReaderSettings />
     </div></header>
     <figure className="prologue-illustration">
       <img key={current.image} src={assetUrl(current.image)} alt={illustrations[current.image]} fetchPriority="high" />

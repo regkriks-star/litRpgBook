@@ -8,6 +8,7 @@ import { assetUrl } from './assets';
 import { chapterCue, chapterSpeaker, goddessPose } from './chapter-one-staging';
 import ClassCards from './ClassCards';
 import HeroCreation from './HeroCreation';
+import ReaderSettings from './ReaderSettings';
 import './chapter-one.css';
 
 const saveKey = 'lazy-courage:chapter-one-page';
@@ -63,11 +64,13 @@ export default function ChapterOne({ onContents, preview }: { onContents: () => 
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
-  return <SceneFrame chapter={1} frame={page}><main className={`stage prologue-reader chapter-one speaking-${speaking} cue-${cue}`} aria-label="Глава 1">
+  return <SceneFrame chapter={1} frame={page}><main className={`stage prologue-reader chapter-one reader-surface speaking-${speaking} cue-${cue}`} aria-label="Глава 1">
     <SceneScope id="excluded-game-header" disabled><header className="game-header reader-header"><div className="reader-toolbar" role="navigation" aria-label="Меню игры">
       <button className="icon-button" aria-label="Оглавление" title="Оглавление" onClick={onContents}><BookOpen size={18} /></button>
       <button className="icon-button" aria-label="Читать главу 1 сначала" title="Читать сначала" onClick={() => setPage(0)}><RotateCcw size={18} /></button>
-    </div></header></SceneScope>
+      <ReaderSettings />
+    </div></header>
+    </SceneScope>
     <figure className="prologue-illustration chapter-one-background">
       <img src={assetUrl('fiol')} alt="Голубая планета Фиол с незнакомыми материками под звёздной пустотой" fetchPriority="high" />
     </figure>

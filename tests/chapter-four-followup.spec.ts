@@ -25,10 +25,11 @@ for (const viewport of [{ width: 568, height: 320 }, { width: 844, height: 390 }
         const button = page.getByRole('button', { name: `Продолжить охоту · ${n} / 3`, exact: true });
         const action = (await button.boundingBox())!;
         await page.screenshot({ path: `${output}/${viewport.width}-hunt${n}-target-final.png` });
-        const overlapX = Math.max(0, Math.min(rabbit.x + rabbit.width, action.x + action.width) - Math.max(rabbit.x, action.x));
-        const overlapY = Math.max(0, Math.min(rabbit.y + rabbit.height, action.y + action.height) - Math.max(rabbit.y, action.y));
-        // Allow one pixel for fractional layout rounding at the transparent canvas edge.
-        expect(Math.min(overlapX, overlapY), JSON.stringify({ rabbit, action })).toBeLessThanOrEqual(1);
+        // The rabbit itself is the control; the hit area must lie on the drawn target.
+        expect(action.x, JSON.stringify({ rabbit, action })).toBeGreaterThanOrEqual(rabbit.x - 1);
+        expect(action.x + action.width).toBeLessThanOrEqual(rabbit.x + rabbit.width + 1);
+        expect(action.y).toBeGreaterThanOrEqual(rabbit.y - 1);
+        expect(action.y + action.height).toBeLessThanOrEqual(rabbit.y + rabbit.height + 1);
         expect(action.width).toBeGreaterThanOrEqual(44);
         expect(action.height).toBeGreaterThanOrEqual(44);
         const point = { x: action.x + action.width / 2, y: action.y + action.height / 2 };

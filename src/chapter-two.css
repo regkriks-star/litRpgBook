@@ -45,10 +45,12 @@
 .distant-rabbits .meadow-sprite { width: 23%; animation: rabbit-hop 2.8s ease-in-out infinite; }
 .distant-rabbits .meadow-sprite:nth-child(2) { animation-delay: .9s; width: 18%; }
 .distant-rabbits .meadow-sprite:nth-child(3) { animation-delay: 1.7s; width: 15%; }
-.cedulis-bush { position: absolute; bottom: 0; right: 12%; width: min(42%, 340px); background: none; display: flex; flex-direction: column; align-items: center; max-height: 100%; }
-.cedulis-bush .meadow-sprite { min-height: 0; width: auto; height: 100%; }
-.cedulis-bush > span { display: flex; gap: 8px; align-items: center; flex-shrink: 0; border: 1px solid #d9cb9b; background: #203a30ef; padding: 9px 17px; border-radius: 3px; }
-.cedulis-bush:hover { filter: drop-shadow(0 0 12px #ead48c); }
+/* The bush itself is the control: no caption over the meadow. Height keeps the
+   plant proportional on short screens; the transparent margins stay clickable. */
+.cedulis-bush { position: absolute; bottom: 0; right: 12%; width: min(42%, 340px); aspect-ratio: 704 / 694; padding: 0; border: 0; background: none; cursor: pointer; }
+.cedulis-bush .meadow-sprite { width: 100%; height: 100%; }
+.cedulis-bush:hover, .cedulis-bush:focus-visible { filter: drop-shadow(0 0 14px #f4df9c); }
+.cedulis-bush:focus-visible { outline: 2px solid #f5e3b0; outline-offset: 4px; }
 .scene-instruction { position: absolute; right: 12%; top: 20%; background: #1b392eee; border: 1px solid #c3c29c; border-radius: 4px; text-align: center; padding: 18px; }
 .scene-instruction > .item-icon { width: 40px; height: 40px; }
 .scene-instruction p { margin: 10px 0; }
@@ -101,8 +103,9 @@
 .chapter-loot > span { display: flex; gap: 10px; }
 .chapter-two .chapter-loot { min-height: 44px; height: 44px; padding: 0; }
 .chapter-loot .item-icon { width: 40px; height: 40px; }
-.chapter-loot strong { position: absolute; bottom: calc(100% + 2px); font-weight: 400; font-size: 13px; color: #fff1bb; text-shadow: 0 1px 3px #0c281d, 0 0 6px #0c281d; }
-.chapter-two .chapter-exchange { position: absolute; bottom: calc(var(--scene-bottom) + 8px); left: 28%; transform: translateX(-50%); z-index: 5; min-height: 44px; padding: 5px 12px; font-size: 16px; }
+.chapter-two .chapter-exchange { position: absolute; bottom: calc(var(--scene-bottom) + 8px); left: 28%; transform: translateX(-50%); z-index: 5; min-height: 44px; padding: 6px 12px; }
+.crystal-handful { display: flex; gap: 2px; }
+.crystal-handful .item-icon { width: 28px; height: 28px; }
 .chapter-two .held-parcel { position: absolute; top: 58%; left: 58%; z-index: 4; }
 .chapter-two .held-parcel .item-icon { width: clamp(32px, 7dvh, 54px); height: clamp(32px, 7dvh, 54px); }
 .bag-highlight .chapter-system-menu button[aria-label="Инвентарь"], .inventory-slot.fresh-item { border-color: #fff0a2; box-shadow: inset 0 0 13px #eed48466, 0 0 8px #eed48477; }
@@ -287,9 +290,7 @@
   .chapter-two .character-label strong { font-size: 11px; }
   .chapter-two .character-label span { font-size: 10px; }
   .chapter-hero-position { height: 100%; }
-  .cedulis-bush { width: 31%; height: 100%; right: 17%; }
-  .cedulis-bush > span { min-height: 40px; padding: 4px 8px; font-size: 12px; gap: 5px; }
-  .cedulis-bush > span svg { width: 16px; height: 16px; }
+  .cedulis-bush { right: 17%; width: auto; height: 88%; max-width: 46%; }
   .scene-instruction { padding: 8px; top: 0; right: 11%; }
   .scene-instruction > .item-icon { display: none; }
   .scene-instruction p { font-size: 12px; margin: 0 0 5px; }
@@ -322,7 +323,6 @@
   .battle-result span { font-size: 11px; }
   .chapter-loot { bottom: 0; padding: 7px; gap: 4px; min-height: 66px; }
   .chapter-loot .item-icon { width: 32px; height: 32px; }
-  .chapter-loot strong { font-size: 12px; }
   .crystal-counter { padding: 4px 8px; font-size: 12px; }
   .crystal-counter .item-icon { width: 28px; height: 28px; }
   .training-caption { top: 0; font-size: 11px; padding: 3px 7px; }
@@ -375,3 +375,9 @@
   .river-crowd.scattering .river-person { translate: var(--scatter-x) var(--scatter-y); }
   .rabbit-remains, .exchange-items { display: none; }
 }
+
+/* The object itself is the control: a transparent, focusable hit area over
+   already drawn art. The action name lives in aria-label/title, not on screen. */
+.scene-action { position: absolute; inset: 0; z-index: 3; padding: 0; border: 0; background: transparent; cursor: pointer; pointer-events: auto; border-radius: 12px; }
+.scene-action:hover { background: radial-gradient(ellipse at center, #f6e2a522, #f6e2a500 70%); box-shadow: inset 0 0 0 1px #f4df9c88; }
+.scene-action:focus-visible { outline: 2px solid #f5e3b0; outline-offset: 3px; box-shadow: 0 0 18px #f4df9c66; }

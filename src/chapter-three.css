@@ -39,7 +39,8 @@
 .city-adults { left: 49%; bottom: 43%; height: 33%; animation: c3-adults-route 2s ease-out both; }
 .c3-hero > .chapter-health { position: absolute; top: 0; left: 0; width: 42%; }
 .c3-return-guards { position: absolute; right: 3%; bottom: 0; height: 85%; width: 50%; }
-.c3-actions { position: absolute; bottom: -44px; left: 0; right: 0; z-index: 4; display: flex; justify-content: center; gap: 10px; }
+.c3-actions { position: absolute; bottom: -44px; left: 0; right: 0; z-index: 4; display: flex; justify-content: center; gap: 10px; pointer-events: none; }
+.c3-actions button { pointer-events: auto; }
 .c3-actions button { min-height: 44px; padding: 7px 15px; font-size: 14px; }
 .c3-actions .item-icon { width: 30px; height: 30px; }
 .c3-repair-state { position: absolute; z-index: 3; inset: 16px 0 5px; pointer-events: none; }

@@ -12,6 +12,7 @@ import ChapterTwo from './ChapterTwo';
 import ChapterThree from './ChapterThree';
 import ChapterFour from './ChapterFour';
 import ChapterFive from './ChapterFive';
+import ReaderSettings from './ReaderSettings';
 import ChapterImprovements from './ChapterImprovements';
 import SpeechBubble from './SpeechBubble';
 import { BattleControls, Meter } from './BattleUI';
@@ -218,7 +219,7 @@ export default function App() {
     {showImprovements && <ChapterImprovements onClose={() => setShowImprovements(false)} />}
   </main>;
 
-  return <div className={`app ${largeText ? 'large-text' : ''}`}>
+  return <div className={`app reader-surface ${largeText ? 'large-text' : ''}`}>
     <div className="rotate-screen" role="status"><Smartphone size={54} /><h1>Поверните телефон</h1><p>Эта история играется горизонтально.</p><button className="primary-button" onClick={() => void fullscreen()}>Развернуть игру<Maximize size={18} /></button><button className="text-button" onClick={() => navigate('contents')}>Оглавление</button>{screenMessage && <p>{screenMessage}</p>}</div>
     <main className={`stage ${battle ? 'battle' : 'novel'} ${battle && c.wave === 2 ? 'second-wave' : ''} ${guild ? 'guild' : ''} ${phase}`} aria-label={battle ? 'Поле боя' : 'Визуальная новелла'}>
       <img className="landscape" src={assetUrl(guild ? 'guild' : 'wasteland')} alt={guild ? 'Гильдия Авантюристов' : 'Песчаные пустоши Хаис-Лумпура'} fetchPriority="high" />
@@ -230,6 +231,7 @@ export default function App() {
           <button className="icon-button" aria-label="Отряд" title="Отряд" onClick={() => setPanel('party')}><Users size={19} /></button>
           <button className="icon-button" aria-label="Журнал" title="Журнал" onClick={() => setPanel('journal')}><BookOpen size={19} /></button>
           <button className="icon-button" aria-label="Порядок действий" title="Порядок действий" onClick={() => setPanel('guide')}><Swords size={19} /></button>
+          <ReaderSettings />
           <button className="icon-button" aria-label="Настройки" title="Настройки" onClick={() => setPanel('settings')}><Settings2 size={19} /></button>
         </nav>
       </header>

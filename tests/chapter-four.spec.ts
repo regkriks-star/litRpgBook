@@ -86,7 +86,11 @@ for (const viewport of [{ width: 568, height: 320 }, { width: 844, height: 390 }
             if (n === 2) {
               const target = (await page.locator('.c4-rabbit').boundingBox())!;
               const action = (await page.getByRole('button', { name: `Продолжить охоту · ${n} / 3`, exact: true }).boundingBox())!;
-              expect(target.x).toBeGreaterThan(action.x + action.width + 8);
+              // The rabbit itself is the control, not a caption next to it.
+              expect(action.x).toBeGreaterThanOrEqual(target.x - 1);
+              expect(action.x + action.width).toBeLessThanOrEqual(target.x + target.width + 1);
+              expect(action.y).toBeGreaterThanOrEqual(target.y - 1);
+              expect(action.y + action.height).toBeLessThanOrEqual(target.y + target.height + 1);
             }
             await page.screenshot({ path: `${output}/${viewport.width}-hunt${n}-target.png` });
             await click(`Продолжить охоту · ${n} / 3`);

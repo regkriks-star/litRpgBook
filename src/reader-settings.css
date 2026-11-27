@@ -1,0 +1,55 @@
+/* Shared reader settings. The values live on <html> (see ReaderSettings.tsx):
+   --reader-font-scale, --reader-window-scale, --reader-window-alpha. */
+:root { --reader-font-scale: 1; --reader-window-scale: 1; --reader-window-alpha: 1; }
+
+/* Base geometry of every book window. Surfaces only override the variables. */
+.reader-surface .story-window { --reader-window-width: 88%; --reader-window-height: 34%; --reader-window-min: 240px; }
+.reader-surface .story-window.prologue-reading { --reader-window-height: 38%; --reader-window-min: 240px; }
+.reader-surface .story-window.chapter-two-reading { --reader-window-width: 92%; --reader-window-height: var(--reading-height); --reader-window-min: 0px; }
+
+/* One rule scales every window. The id beats chapter-specific left/right/height. */
+#root .reader-surface .story-window {
+  left: 50%;
+  right: auto;
+  width: min(calc(var(--reader-window-width) * var(--reader-window-scale)), 96%);
+  height: calc(var(--reader-window-height) * var(--reader-window-scale));
+  min-height: calc(var(--reader-window-min) * var(--reader-window-scale));
+  translate: -50% 0;
+}
+
+/* Text base per surface; the slider multiplies it. */
+#root .reader-surface .dialogue-text { font-size: calc(var(--reader-font-base, 26px) * var(--reader-font-scale)); }
+.reader-surface .story-window.prologue-reading .dialogue-text { --reader-font-base: 26px; }
+.reader-surface .story-window.chapter-two-reading .dialogue-text { --reader-font-base: clamp(20px, 2vw, 26px); }
+.reader-surface .story-window .dialogue-text { --reader-font-base: 26px; }
+.reader-surface.large-text .dialogue-text { --reader-font-base: 30px; }
+
+.reader-settings { position: fixed; z-index: 30; top: calc(env(safe-area-inset-top, 0px) + 62px); right: max(22px, env(safe-area-inset-right)); width: min(330px, calc(100vw - 44px)); max-height: calc(100dvh - 84px); overflow-y: auto; padding: 10px 14px 12px; color: #f1edd8; background: #1b3a31f7; border: 1px solid #c9c09a; border-radius: 6px; box-shadow: 0 12px 36px #0a201a99; }
+.reader-settings header { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-bottom: 4px; border-bottom: 1px solid #c9c09a33; }
+.reader-settings h2 { font-size: 18px; color: #f5dfab; }
+.reader-settings .icon-button { width: 44px; height: 44px; }
+.reader-setting { display: grid; gap: 2px; padding: 6px 0; border-bottom: 1px solid #c9c09a22; }
+.reader-setting > span { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
+.reader-setting output { color: #f5dfab; font-variant-numeric: tabular-nums; }
+.reader-setting input { width: 100%; height: 44px; margin: 0; accent-color: #d4bd82; cursor: pointer; }
+.reader-settings > .text-button { margin-top: 8px; min-height: 44px; }
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .reader-surface .story-window { --reader-window-width: 92%; --reader-window-height: 48%; --reader-window-min: 160px; }
+  .reader-surface .story-window.prologue-reading { --reader-window-height: 48%; --reader-window-min: 150px; }
+  .reader-surface .story-window.chapter-two-reading { --reader-window-width: 94%; --reader-window-height: var(--reading-height); --reader-window-min: 0px; }
+  .reader-surface .story-window.prologue-reading .dialogue-text { --reader-font-base: 19px; }
+  .reader-surface .story-window.chapter-two-reading .dialogue-text { --reader-font-base: 18px; }
+  .reader-surface .story-window .dialogue-text { --reader-font-base: 19px; }
+  .reader-surface.large-text .dialogue-text { --reader-font-base: 22px; }
+  .reader-settings { top: calc(env(safe-area-inset-top, 0px) + 52px); right: max(14px, env(safe-area-inset-right)); width: min(300px, calc(100vw - 28px)); max-height: calc(100dvh - 60px); padding: 6px 10px 8px; }
+  .reader-settings h2 { font-size: 15px; }
+  .reader-setting { padding: 2px 0; }
+  .reader-setting > span { font-size: 11px; }
+}
+/* Chapter 1's window is slightly shorter on phones than the prologue's. */
+.chapter-one .story-window.prologue-reading { --reader-window-width: 88%; --reader-window-height: 38%; --reader-window-min: 240px; }
+@media (max-height: 600px) and (orientation: landscape) {
+  .chapter-one .story-window.prologue-reading { --reader-window-width: 92%; --reader-window-height: 45%; --reader-window-min: 144px; }
+}
+
