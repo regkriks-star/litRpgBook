@@ -53,3 +53,15 @@
   .chapter-one .story-window.prologue-reading { --reader-window-width: 92%; --reader-window-height: 45%; --reader-window-min: 144px; }
 }
 
+
+/* Compact reading footer on phones: the visible row is about half as tall,
+   while the transparent hit area keeps a 44 px touch target around each button. */
+@media (max-width: 950px) and (orientation: landscape) {
+  #root .reader-surface .story-window { padding-bottom: 3px; }
+  #root .reader-surface .story-window .reader-controls { padding: 0; gap: 6px; min-height: 0; }
+  #root .reader-surface .story-window .reader-controls button { position: relative; height: 26px; min-height: 26px; min-width: 44px; padding: 0 7px; gap: 4px; font-size: 11px; }
+  #root .reader-surface .story-window .reader-controls button svg { width: 14px; height: 14px; }
+  #root .reader-surface .story-window .reader-controls button::after { content: ''; position: absolute; inset: -20px 0 0; }
+  #root .reader-surface .story-window .reader-progress { font-size: 10px; line-height: 1.1; }
+  #root .reader-surface .story-window .reader-progress small { display: none; }
+}

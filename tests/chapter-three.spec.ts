@@ -115,8 +115,13 @@ for (const viewport of [{ width: 1440, height: 900 }, { width: 568, height: 320 
           expect(m.viewportOverflow).toBe(false);
           if (index < 41 || index > 60) expect(m.textHeight).toBeGreaterThanOrEqual(49);
           for (const name of ['Назад', index === 96 ? 'Глава 4' : 'Далее']) {
-            const box = (await page.getByRole('button', { name, exact: true }).boundingBox())!;
-            expect(box.height).toBeGreaterThanOrEqual(44); expect(box.y + box.height).toBeLessThanOrEqual(viewport.height);
+            const control = page.getByRole('button', { name, exact: true });
+            const box = (await control.boundingBox())!;
+            if (viewport.width <= 950) {
+              expect(box.height).toBeGreaterThanOrEqual(24); expect(box.height).toBeLessThanOrEqual(30);
+              expect(await control.evaluate(element => parseFloat(getComputedStyle(element, '::after').height))).toBeGreaterThanOrEqual(44);
+            } else expect(box.height).toBeGreaterThanOrEqual(44);
+            expect(box.y + box.height).toBeLessThanOrEqual(viewport.height);
           }
           if ([26, 27, 29].includes(index)) {
             await expect(page.locator('.c3-residents')).toHaveCount(4);

@@ -102,7 +102,14 @@ for (const viewport of [{ width: 568, height: 320 }, { width: 844, height: 390 }
         for (const control of await page.locator('.reader-controls button').all()) {
           const box = (await control.boundingBox())!;
           expect(box.width).toBeGreaterThanOrEqual(44);
-          expect(box.height).toBeGreaterThanOrEqual(44);
+          if (viewport.width <= 950) {
+            // Compact phone footer: visible row is half height, touch area stays 44 px.
+            expect(box.height).toBeGreaterThanOrEqual(24);
+            expect(box.height).toBeLessThanOrEqual(30);
+            expect(await control.evaluate(element => parseFloat(getComputedStyle(element, '::after').height))).toBeGreaterThanOrEqual(44);
+          } else {
+            expect(box.height).toBeGreaterThanOrEqual(44);
+          }
         }
         metrics.push({ page: index, sourceMatches: true, dimensions, overflow });
         if (index === 23) {
@@ -305,9 +312,12 @@ for (const viewport of [{ width: 568, height: 320 }, { width: 844, height: 390 }
       }
       await resume(page, 70);
       expect(await page.locator('.chapter-two-text').evaluate(el => el.clientHeight)).toBeGreaterThanOrEqual(49);
-      for (const name of ['Пинок', 'Удар рукой', 'Уклонение', 'Далее']) {
+      for (const name of ['Пинок', 'Удар рукой', 'Уклонение']) {
         expect((await page.getByRole('button', { name, exact: true }).boundingBox())!.height).toBeGreaterThanOrEqual(40);
       }
+      const next = page.getByRole('button', { name: 'Далее', exact: true });
+      expect((await next.boundingBox())!.height).toBeGreaterThanOrEqual(24);
+      expect(await next.evaluate(element => parseFloat(getComputedStyle(element, '::after').height))).toBeGreaterThanOrEqual(44);
       await context.close();
     } finally { if (context.pages().length) await context.close(); }
   });

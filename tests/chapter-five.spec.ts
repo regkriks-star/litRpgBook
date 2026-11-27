@@ -26,7 +26,12 @@ for (const viewport of viewports) {
         if (a.top < b.top || a.bottom > b.bottom) panel.scrollBy(0, a.top - b.top);
       });
       const box = (await button.boundingBox())!;
-      expect(box.height).toBeGreaterThanOrEqual(44); expect(box.width).toBeGreaterThanOrEqual(44);
+      const compactReader = viewport.width <= 950 && await button.evaluate(element => Boolean(element.matches('.reader-controls > button')));
+      if (compactReader) {
+        expect(box.height).toBeGreaterThanOrEqual(24); expect(box.height).toBeLessThanOrEqual(30);
+        expect(await button.evaluate(element => parseFloat(getComputedStyle(element, '::after').height))).toBeGreaterThanOrEqual(44);
+      } else expect(box.height).toBeGreaterThanOrEqual(44);
+      expect(box.width).toBeGreaterThanOrEqual(44);
       expect(box.y).toBeGreaterThanOrEqual(0); expect(box.y + box.height).toBeLessThanOrEqual(viewport.height + 1);
       const x = box.x + box.width / 2, y = box.y + box.height / 2;
       expect(await button.evaluate((el, p) => el.contains(document.elementFromPoint(p.x, p.y)), { x, y }), await button.textContent()).toBe(true);

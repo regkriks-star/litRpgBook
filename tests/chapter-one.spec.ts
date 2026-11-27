@@ -231,10 +231,15 @@ test('small landscape keeps touch controls, appearance text and direct card taps
   await properties.focus();
   await page.keyboard.press('End');
   await expect.poll(() => properties.evaluate(el => el.scrollTop + el.clientHeight >= el.scrollHeight - 1)).toBe(true);
+  // The phone footer is compact by request: roughly half the previous height.
+  expect((await page.locator('.reader-controls').boundingBox())!.height).toBeLessThanOrEqual(30);
   for (const button of await page.locator('.reader-controls button').all()) {
     const box = (await button.boundingBox())!;
-    expect(box.height).toBeGreaterThanOrEqual(44);
+    expect(box.height).toBeGreaterThanOrEqual(24);
+    expect(box.height).toBeLessThanOrEqual(30);
     expect(box.width).toBeGreaterThanOrEqual(44);
+    // The transparent hit area keeps the 44 px touch target despite the compact look.
+    expect(await button.evaluate(element => parseFloat(getComputedStyle(element, '::after').height))).toBeGreaterThanOrEqual(44);
   }
   await resume(page, 25);
   const target = (await page.getByRole('button', { name: 'Открыть карту 72', exact: true }).boundingBox())!;

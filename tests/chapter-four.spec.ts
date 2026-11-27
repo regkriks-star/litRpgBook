@@ -30,7 +30,12 @@ for (const viewport of [{ width: 568, height: 320 }, { width: 844, height: 390 }
         if (bounds.top < area.top || bounds.bottom > area.bottom) panel.scrollBy(0, bounds.top - area.top);
       });
       const box = (await button.boundingBox())!;
-      expect(box.height, name).toBeGreaterThanOrEqual(44);
+      const compactReader = viewport.width <= 950 && await button.evaluate(element => Boolean(element.matches('.reader-controls > button')));
+      if (compactReader) {
+        expect(box.height, name).toBeGreaterThanOrEqual(24);
+        expect(box.height, name).toBeLessThanOrEqual(30);
+        expect(await button.evaluate(element => parseFloat(getComputedStyle(element, '::after').height)), name).toBeGreaterThanOrEqual(44);
+      } else expect(box.height, name).toBeGreaterThanOrEqual(44);
       expect(box.width, name).toBeGreaterThanOrEqual(44);
       expect(box.y, name).toBeGreaterThanOrEqual(0);
       expect(box.y + box.height, name).toBeLessThanOrEqual(viewport.height + 1);
@@ -135,8 +140,13 @@ for (const viewport of [{ width: 568, height: 320 }, { width: 844, height: 390 }
           expect(m.viewportOverflow).toBe(false);
           if (index < 51 || index > 71) expect(m.textHeight).toBeGreaterThanOrEqual(49);
           for (const name of ['Назад', index === 107 ? 'Глава 5' : 'Далее']) {
-            const box = (await page.getByRole('button', { name, exact: true }).boundingBox())!;
-            expect(box.height).toBeGreaterThanOrEqual(44); expect(box.y + box.height).toBeLessThanOrEqual(viewport.height);
+            const control = page.getByRole('button', { name, exact: true });
+            const box = (await control.boundingBox())!;
+            if (viewport.width <= 950) {
+              expect(box.height).toBeGreaterThanOrEqual(24); expect(box.height).toBeLessThanOrEqual(30);
+              expect(await control.evaluate(element => parseFloat(getComputedStyle(element, '::after').height))).toBeGreaterThanOrEqual(44);
+            } else expect(box.height).toBeGreaterThanOrEqual(44);
+            expect(box.y + box.height).toBeLessThanOrEqual(viewport.height);
           }
           metrics.push({ page: index, ...m });
         }
